@@ -722,7 +722,7 @@ import {
       //   "CGPA : 9.42 / 10",
       name: "New York University, Center for Data Science",
       year: "2024 - 2026 (expected)",
-      image: "/nyu.jpg",
+      image: nyu,
     },
     {
       degree:
@@ -732,7 +732,7 @@ import {
       //   "Percentage : 89.88 %",
       name: "Birla Institute of Technology and Science, Pilani",
       year: "2019 - 2023",
-      image: "/bits.jpg",
+      image: bits,
     },
     // {
     //   degree:
