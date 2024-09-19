@@ -61,7 +61,7 @@ const Hero = () => {
       </div>
       </div>
       <div className="imgcontainer1 absolute violet-gradient">
-        <img src={kani} alt="" className="object-contain"/>
+        <img src={require("./src/assets/kani.jpeg")} alt="" className="object-contain"/>
       </div>
       </div>
 
