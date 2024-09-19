@@ -61,7 +61,7 @@ const Hero = () => {
       </div>
       </div>
       <div className="imgcontainer1 absolute violet-gradient">
-        <img src={kani} alt="" className="object-contain"/>
+        <img src="https://drive.google.com/thumbnail?id=1CHCFM8ZafPDE5brs2f0GvVp7uBHs0qwE&sz=w1000" alt="" className="object-contain"/>
       </div>
       </div>
 
