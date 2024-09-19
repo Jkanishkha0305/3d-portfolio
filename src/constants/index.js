@@ -735,7 +735,7 @@ import bits from "../assets/bits.jpg"
       //   "Percentage : 89.88 %",
       name: "Birla Institute of Technology and Science, Pilani",
       year: "2019 - 2023",
-      image: "https://upload.wikimedia.org/wikipedia/en/d/d3/BITS_Pilani-Logo.svg,
+      image: "https://upload.wikimedia.org/wikipedia/en/d/d3/BITS_Pilani-Logo.svg",
     },
     // {
     //   degree:
