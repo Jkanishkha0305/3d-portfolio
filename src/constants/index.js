@@ -658,7 +658,7 @@ import {
     {
       title: "Data Science Intern",
       company_name: "KPTAC Technologies",
-      icon: "https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/414961101_711712554393778_7407061738655737148_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=zO1GHMfwZ5oQ7kNvgFI-j7u&_nc_ht=scontent-lga3-2.xx&_nc_gid=AFPW5ANt6p1p9E771bpUi28&oh=00_AYDKg0XvwBzovdK_4n75MISnk7sZsAA_FR6R75E87U7Bnw&oe=66EBBE0F",
+      icon: "https://media.licdn.com/dms/image/v2/D4D0BAQG6DA2mdqPFaA/company-logo_200_200/company-logo_200_200/0/1705691416741/kptactechnologies_logo?e=2147483647&v=beta&t=QcxI5Idgxs4l5b4fQWx_ehByTXGpFetz-SBeNPDuf3s",
       iconBg: "#f3343c",
       date: "Feb 2023 - Jul 2023",
       link: "",
