@@ -725,7 +725,7 @@ import bits from "../assets/bits.jpg"
       //   "CGPA : 9.42 / 10",
       name: "New York University, Center for Data Science",
       year: "2024 - 2026 (expected)",
-      image: nyu,
+      image: "https://www.ssrc.org/wp-content/uploads/2022/08/NYU-modified.png",
     },
     {
       degree:
@@ -735,7 +735,7 @@ import bits from "../assets/bits.jpg"
       //   "Percentage : 89.88 %",
       name: "Birla Institute of Technology and Science, Pilani",
       year: "2019 - 2023",
-      image: bits,
+      image: "https://upload.wikimedia.org/wikipedia/en/d/d3/BITS_Pilani-Logo.svg,
     },
     // {
     //   degree:
