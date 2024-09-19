@@ -1,9 +1,12 @@
 import {
     javascript,html,css,reactjs,tailwind,nodejs,mongodb,git,threejs,
     hf,xneuronz,holopin,
-    nyu,bits,
+    // nyu,bits,
   } from "../assets";
 
+import nyu from "../assets/nyu.jpg"
+import bits from "../assets/bits.jpg"
+    
   const profiles = [
     // {
     //   link:"https://drive.google.com/file/d/1hAfQ2SFvW8XXFdgvrKo2w0Bm6hKNDPRw/view?usp=sharing",
