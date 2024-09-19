@@ -22,7 +22,7 @@ const FeedbackCard = ({
   >
       <div className='mt-7 flex flex-col justify-between items-center gap-1'>
         <img
-          src={image}
+          src=image
           alt={`feedback_by-${name}`}
           width="80" height="80"
           className='rounded-full object-cover'
