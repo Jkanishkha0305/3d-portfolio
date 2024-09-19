@@ -41,7 +41,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain logo' />
+          <img src="https://drive.google.com/thumbnail?id=14YoZfa9n6vdM29rqwYniVKLOUPU3uig0&sz=w1000" alt='logo' className='w-9 h-9 object-contain logo' />
           <p className='sm:block text-white text-[18px] font-bold cursor-pointer flex '>
           Kanishkha Jaisankar
           </p>
