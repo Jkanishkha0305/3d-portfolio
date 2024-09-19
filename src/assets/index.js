@@ -1,5 +1,5 @@
-import logo from "./jkbg.png";
-import kani from "./kani.jpeg";
+import logo from "./project/jkbg.png";
+import kani from "./project/kani.jpeg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -21,8 +21,8 @@ import threejs from "./tech/threejs.svg";
 import holopin from "./holopin.png";
 import hf from "./hf.svg";
 import xneuronz from "./logo.png";
-import nyu from "./nyu.jpg";
-import bits from "./bits.jpg";
+import nyu from "./project/nyu.jpg";
+import bits from "./project/bits.jpg";
 
 export {
   logo,
