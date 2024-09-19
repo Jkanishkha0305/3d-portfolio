@@ -6,10 +6,9 @@
 
 Implemented my own Portfolio as Website, Where I have added all my projects and experiences. I have hosted it with the help of github gh-pages. I keep on making changes accordingly to keep it up-to-date.</b>
 
-![3D Portfolio](https://github.com/shinchancode/3d-react-portfolio/blob/main/Images/1.png)
 
 ## View Live Demo
-<pre><center><a href="https://shinchancode.github.io/3d-react-portfolio/"><b>https://shinchancode.github.io/3d-react-portfolio/</b></a></center></pre>
+<pre><center><a href="https://jkanishkha0305.github.io/3d-portfolio/"><b>https://jkanishkha0305.github.io/3d-portfolio/</b></a></center></pre>
 
 
 ## Introduction
@@ -106,51 +105,13 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 <hr>
 
-## [SnapShots in Laptop View](https://shinchancode.github.io/3d-react-portfolio/)
-
-![3D Portfolio Laptop](https://github.com/shinchancode/3d-react-portfolio/blob/main/Images/1.png)
-
-![3D Portfolio Laptop](https://github.com/shinchancode/3d-react-portfolio/blob/main/Images/2.png)
-
-![3D Portfolio Laptop](https://github.com/shinchancode/3d-react-portfolio/blob/main/Images/3.png)
-
-![3D Portfolio Laptop](https://github.com/shinchancode/3d-react-portfolio/blob/main/Images/4.png)
-
-![3D Portfolio Laptop](https://github.com/shinchancode/3d-react-portfolio/blob/main/Images/5.png)
-
-![3D Portfolio Laptop](https://github.com/shinchancode/3d-react-portfolio/blob/main/Images/6.png)
-
-<hr>
-
-## [SnapShots in Mobile View](https://shinchancode.github.io/3d-react-portfolio/)
-
-<div align="center">
-<img src="https://github.com/shinchancode/3d-react-portfolio/blob/main/Images/p1.jpg" width="250px" height="400"/>
-
-<img src="https://github.com/shinchancode/3d-react-portfolio/blob/main/Images/p2.jpg" width="250px" height="400"/>
-
-<img src="https://github.com/shinchancode/3d-react-portfolio/blob/main/Images/p3.jpg" width="250px" height="400"/>
-</div>
-<br>
-
-<div align="center">
-<img src="https://github.com/shinchancode/3d-react-portfolio/blob/main/Images/p4.png" width="250px" height="400"/>
-
-<img src="https://github.com/shinchancode/3d-react-portfolio/blob/main/Images/p5.png" width="250px" height="400"/>
-
-<img src="https://github.com/shinchancode/3d-react-portfolio/blob/main/Images/p6.png" width="250px" height="400"/>
-</div>  
 
 ### Connect with me:
 
 [<img align="left" alt="codeSTACKr.com" width="22px" src="https://img.icons8.com/?size=512&id=n9d0Hm43JCPK&format=png" />][website]
-[<img align="left" alt="codeSTACKr | Twitter" width="22px" src="https://img.icons8.com/fluency/48/twitter.png" />][twitter]
 [<img align="left" alt="codeSTACKr | LinkedIn" width="22px" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" />][linkedin]
-[<img align="left" alt="codeSTACKr | Instagram" width="22px" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" />][instagram]
 
 <br />
 
-[website]: https://shinchancode.github.io/3d-react-portfolio/
-[twitter]: https://twitter.com/CodeShinchan
-[instagram]: https://www.instagram.com/aarti.rathiii
-[linkedin]: https://www.linkedin.com/in/aarti-rathi-a6031814b/
+[website]: https://jkanishkha0305.github.io/3d-portfolio/
+[linkedin]: https://www.linkedin.com/in/jkanishkha/
