@@ -107,7 +107,7 @@ const Project = () => {
         break;
 
       default:
-        setData(cProject);
+        setData(llmProject);
     }
   }, [selected]);
 
