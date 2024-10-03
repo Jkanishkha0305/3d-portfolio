@@ -176,6 +176,50 @@ import bits from "../assets/bits.jpg"
 
   export const llmProject = [
     {
+      name: "MediBot-GraphRAG",
+      description:
+        "GraphRag based chatbot built using LangChain and Neo4j, designed for hospital systems. The chatbot retrieves structured and unstructured data about patients, visits, physicians, insurance payers, and hospital locations.",
+      tags: [
+        {
+          name: "Neo4j",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Langchain",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Docker",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: "https://realpython.com/cdn-cgi/image/width=1920,format=auto/https://files.realpython.com/media/Build-a-LLM-Application-with-LangChain_Watermarked.b9d023202ad2.jpg",
+      source_link: "https://github.com/Jkanishkha0305/Medibot-GraphRAG",
+      source_code_link: "https://github.com/Jkanishkha0305/Medibot-GraphRAG",
+    },
+    {
+      name: "IKEA Assembly Assistant",
+      description:
+        "Developed a multimodal system that utilizes OpenAI GPT-4o, Gemini, and CLIP to analyze 10+ IKEA assembly manuals, extracting information from text and images. Used LlamaParse, and Cohere Reranker for precise retrieval of assembly instructions.",
+      tags: [
+        {
+          name: "OpenAI API",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "LLamaParse",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Cohere API",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: "https://realpython.com/cdn-cgi/image/width=1920,format=auto/https://files.realpython.com/media/ChatGPT-A-Great-Coding-Mentor-for-Learning-Python_Watermarked.3161825ae6b8.jpg",
+      source_link: "https://github.com/Jkanishkha0305/End-to-End-LLM-Projects/tree/main/IKEA_Assembly_RAG",
+      source_code_link: "https://github.com/Jkanishkha0305/End-to-End-LLM-Projects/tree/main/IKEA_Assembly_RAG",
+    },
+    {
       name: "Clinic AI Assistant",
       description:
         "Built a Private AI Assistant for clinics and hospitals which fetches patient data and answers questions on top of that data, using Qdrant Hybrid Cloud (JWT-RBAC), DSPy and Groq — Llama3",
@@ -661,7 +705,7 @@ import bits from "../assets/bits.jpg"
     {
       title: "Data Science Intern",
       company_name: "KPTAC Technologies",
-      icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbUe6H-KQEPWFrlqnIRrTA_gOhscWv8FN5lO13LNdChDFCWRAJ-bB9Y3qmp9A0FJKtUIY&usqp=CAU",
+      icon: "https://drive.google.com/thumbnail?id=1A_mhCe4CDa-htvQsVOjTmqE6MxJTbP3q&sz=w1000",
       iconBg: "#f3343c",
       date: "Feb 2023 - Jul 2023",
       link: "",
