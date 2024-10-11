@@ -52,7 +52,10 @@ import bits from "../assets/bits.jpg"
 
   const achievements = [
     {
-      title: "Winner of DOTLAS’s Datathon 2023 .",
+      title: "First Place in HackWallStreet x Deskhead Hackathon 2023. ",
+    },
+    {
+      title: "Winner of DOTLAS Datathon 2023.",
     },
     {
       title: "Winner of Dubai World Police Summit 2023 AI Challenge, UAE",
@@ -78,9 +81,7 @@ import bits from "../assets/bits.jpg"
     {
       title: "Runner up of BITS Sports Festival Cricket Tournament 2022.",
     },
-    {
-      title: "3rd place in Amity University Cricket Leauge 2022. ",
-    },
+    
   ]
 
   const research = [
@@ -241,28 +242,7 @@ import bits from "../assets/bits.jpg"
       source_link: "https://github.com/Jkanishkha0305/End-to-End-LLM-Projects/tree/main/Groq_Clininc_Assitant",
       source_code_link: "https://github.com/Jkanishkha0305/End-to-End-LLM-Projects/tree/main/Groq_Clininc_Assitant",
     },
-    {
-      name: "Gallery AI",
-      description:
-        "Created an Intelligent Image Gallery with Upload feature, Deduplication, and Text-Based image Search Using Vector DB Qdrant, OpenAI CLIP embeddings and Sentence Transformers.",
-      tags: [
-        {
-          name: "clip-ViT-B-32",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Qdrant",
-          color: "green-text-gradient",
-        },
-        {
-          name: "HuggingFace",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: "https://realpython.com/cdn-cgi/image/width=1920,format=auto/https://files.realpython.com/media/Generate-Images-with-DALL-E-2-and-OpenAIs-API_Watermarked.05753350e866.jpg",
-      source_link: "https://github.com/Jkanishkha0305/End-to-End-LLM-Projects/tree/main/CLIP_AI_Gallery",
-      source_code_link: "https://github.com/Jkanishkha0305/End-to-End-LLM-Projects/tree/main/CLIP_AI_Gallery",
-    },
+    
     {
       name: "LangQuery",
       description:
@@ -328,28 +308,6 @@ import bits from "../assets/bits.jpg"
       image: "https://realpython.com/cdn-cgi/image/width=1920,format=auto/https://files.realpython.com/media/How-to-Use-SpaCy-for-Natural-Language-Processing-in-Python_Watermarked_1.b363fc084a80.jpg",
       source_link: "https://github.com/Jkanishkha0305/End-to-End-LLM-Projects/blob/main/PHI3_Finetuning_Unsloth/README.md",
       source_code_link: "https://github.com/Jkanishkha0305/End-to-End-LLM-Projects/blob/main/PHI3_Finetuning_Unsloth/README.md",
-    },
-    {
-      name: "MarketAI",
-      description:
-        "Built a user-friendly news research tool designed for effortless information retrieval. Users can input article URLs and ask questions to receive relevant insights from the stock market and financial domain.",
-      tags: [
-        {
-          name: "Open AI API",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Langchain",
-          color: "green-text-gradient",
-        },
-        {
-          name: "FAISS",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: "https://realpython.com/cdn-cgi/image/width=1920,format=auto/https://files.realpython.com/media/Monthly-Python-News_Purple_Watermarked.5b2e306328cb.jpg",
-      source_link: "https://github.com/Jkanishkha0305/End-to-End-LLM-Projects/tree/main/PaLM_news_research_tool",
-      source_code_link: "https://github.com/Jkanishkha0305/End-to-End-LLM-Projects/tree/main/PaLM_news_research_tool",
     },
   ];
   
@@ -668,6 +626,50 @@ import bits from "../assets/bits.jpg"
       source_link: "https://github.com/Jkanishkha0305/Transformers-from-Scratch",
       source_code_link: "https://github.com/Jkanishkha0305/Transformers-from-Scratch",
     },
+    {
+      name: "Gallery AI",
+      description:
+        "Created an Intelligent Image Gallery with Upload feature, Deduplication, and Text-Based image Search Using Vector DB Qdrant, OpenAI CLIP embeddings and Sentence Transformers.",
+      tags: [
+        {
+          name: "clip-ViT-B-32",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Qdrant",
+          color: "green-text-gradient",
+        },
+        {
+          name: "HuggingFace",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: "https://realpython.com/cdn-cgi/image/width=1920,format=auto/https://files.realpython.com/media/Generate-Images-with-DALL-E-2-and-OpenAIs-API_Watermarked.05753350e866.jpg",
+      source_link: "https://github.com/Jkanishkha0305/End-to-End-LLM-Projects/tree/main/CLIP_AI_Gallery",
+      source_code_link: "https://github.com/Jkanishkha0305/End-to-End-LLM-Projects/tree/main/CLIP_AI_Gallery",
+    },
+    {
+      name: "MarketAI",
+      description:
+        "Built a user-friendly news research tool designed for effortless information retrieval. Users can input article URLs and ask questions to receive relevant insights from the stock market and financial domain.",
+      tags: [
+        {
+          name: "Open AI API",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Langchain",
+          color: "green-text-gradient",
+        },
+        {
+          name: "FAISS",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: "https://realpython.com/cdn-cgi/image/width=1920,format=auto/https://files.realpython.com/media/Monthly-Python-News_Purple_Watermarked.5b2e306328cb.jpg",
+      source_link: "https://github.com/Jkanishkha0305/End-to-End-LLM-Projects/tree/main/PaLM_news_research_tool",
+      source_code_link: "https://github.com/Jkanishkha0305/End-to-End-LLM-Projects/tree/main/PaLM_news_research_tool",
+    },
     
   ];
   
@@ -717,20 +719,20 @@ import bits from "../assets/bits.jpg"
       ],
       link: "https://drive.google.com/file/d/1O7bpoPvjCfuVurKqWvIp4d7bq2W36qhx/view?usp=sharing",
     },
-    {
-      title: "Undergraduate Student Researcher",
-      company_name: "Birla Institute of Technology and Science, Pilani",
-      icon: "https://upload.wikimedia.org/wikipedia/en/d/d3/BITS_Pilani-Logo.svg",
-      iconBg: "#E6DEDD",
-      date: "Jun 2022 - Jan 2023",
-      link: "https://www.bits-pilani.ac.in/dubai/",
-      points: [
-        'Worked under guidance of Dr. Pranav M. Pawar to develop a cutting edge Hybrid Learning Model using a CNN+LSTM approach, achieving 97.56% accuracy in COVID-19 detection from chest X-ray images.(Published)',
-        "Worked under Dr. Angel Arul Jothi on comparative analysis of Fine-tuned Transfer Learning Models for classifying microstructure images of metals using a custom-created dataset.(Published)",
-        "Worked under supervisor Dr. Kalaiselvi on Application of DCNN for Visual Tracking of Mobile Robot using UAV.(MS2 - Mechatronics Lab)",
-      ],
-      link: "https://drive.google.com/file/d/1ztAkzEFMw97jih_T_Puwaw8guAVabyjk/view?usp=sharing",
-    },
+    // {
+    //   title: "Undergraduate Student Researcher",
+    //   company_name: "Birla Institute of Technology and Science, Pilani",
+    //   icon: "https://upload.wikimedia.org/wikipedia/en/d/d3/BITS_Pilani-Logo.svg",
+    //   iconBg: "#E6DEDD",
+    //   date: "Jun 2022 - Jan 2023",
+    //   link: "https://www.bits-pilani.ac.in/dubai/",
+    //   points: [
+    //     'Worked under guidance of Dr. Pranav M. Pawar to develop a cutting edge Hybrid Learning Model using a CNN+LSTM approach, achieving 97.56% accuracy in COVID-19 detection from chest X-ray images.(Published)',
+    //     "Worked under Dr. Angel Arul Jothi on comparative analysis of Fine-tuned Transfer Learning Models for classifying microstructure images of metals using a custom-created dataset.(Published)",
+    //     "Worked under supervisor Dr. Kalaiselvi on Application of DCNN for Visual Tracking of Mobile Robot using UAV.(MS2 - Mechatronics Lab)",
+    //   ],
+    //   link: "https://drive.google.com/file/d/1ztAkzEFMw97jih_T_Puwaw8guAVabyjk/view?usp=sharing",
+    // },
     {
       title: "Software Engineering Intern",
       company_name: "Sentient Labs",
