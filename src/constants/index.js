@@ -52,10 +52,10 @@ import bits from "../assets/bits.jpg"
 
   const achievements = [
     {
-      title: "First Place in HackWallStreet x Deskhead Hackathon 2023. ",
+      title: "First Place in HackWallStreet x Deskhead Hackathon, 2024. ",
     },
     {
-      title: "Winner of DOTLAS Datathon 2023.",
+      title: "Winner of DOTLAS Datathon, 2023.",
     },
     {
       title: "Winner of Dubai World Police Summit 2023 AI Challenge, UAE",
@@ -142,10 +142,10 @@ import bits from "../assets/bits.jpg"
       name: "Langchain",
       icon: "https://lancedb.github.io/lancedb/assets/langchain.png",
     },
-    {
-      name: "DSPy",
-      icon: "https://dspy-docs.vercel.app/img/logo.png",
-    },
+    // {
+    //   name: "DSPy",
+    //   icon: "https://dspy-docs.vercel.app/img/logo.png",
+    // },
     {
       name: "git",
       icon: git,
