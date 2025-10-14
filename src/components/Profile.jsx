@@ -17,9 +17,14 @@ const Profile = () => {
       </motion.div>
     <div className='my-skills'>
       {profiles.map((profile) => (
-        <div className="skill" data-aos="fade-up" data-aos-delay="200">
+        <div
+          className="skill"
+          key={profile.link || profile.icon}
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
         <div className="icon-container">
-          <a href={profile.link} target="_blank">
+          <a href={profile.link} target="_blank" rel="noopener noreferrer">
             <img src={profile.icon} />
           </a>
         </div>

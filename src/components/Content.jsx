@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import React, { useState } from "react";
 import "./Content.scss";
 import { AiOutlineHome,AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { BiBook } from "react-icons/bi";

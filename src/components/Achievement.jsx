@@ -17,14 +17,25 @@ const Achievement = () => {
           <h2 className={styles.sectionHeadText}>Achievements.</h2>
         </motion.div>
       </div>
-      <div className={`-mt-20 justify-center p-6 ${styles.paddingX} gap-7`}>
-        <ul className='mt-5 list-disc ml-5 space-y-2'>
+      <div className={`-mt-20 justify-center p-6 ${styles.paddingX}`}>
+        <motion.ul
+          className='achievement-grid'
+          variants={fadeIn("", "spring", 0.1, 0.8)}
+        >
           {achievements.map((achievement, index) => (
-            <li key={index} className='text-white-100 text-[15px] pl-1'>
-              {achievement.title}
-            </li>
+            <motion.li
+              key={achievement.title}
+              className='achievement-card'
+              variants={fadeIn("up", "spring", index * 0.1, 0.6)}
+              whileHover={{ y: -6, scale: 1.01 }}
+            >
+              <span className='achievement-pill'>
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              <p className='achievement-text'>{achievement.title}</p>
+            </motion.li>
           ))}
-        </ul>
+        </motion.ul>
       </div>
     </div>
   );

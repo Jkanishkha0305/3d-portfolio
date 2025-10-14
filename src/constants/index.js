@@ -52,54 +52,111 @@ import bits from "../assets/bits.jpg"
 
   const achievements = [
     {
-      title: "First Place in HackWallStreet x Deskhead Hackathon, 2024. ",
+      title: "🥇 First Place in 'Best use of Linkup' @AI Agents Hackathon NYC, 2025.",
     },
     {
-      title: "Winner of DOTLAS Datathon, 2023.",
+      title: "🥇 First Place in HackWallStreet x Deskhead Hackathon, 2024. ",
     },
     {
-      title: "Winner of Dubai World Police Summit 2023 AI Challenge, UAE",
+      title: "🥉 Third Place in Hatch Labs Hackathon (Team Great Village), 2024 .",
     },
     {
-      title: "Winner of PIED CEL’s Desert Hack Hackathon 2022.",
+      title: "🥇 Winner of DOTLAS Datathon, 2023.",
     },
     {
-      title: "Winner of ACM BPDC’s Capture The Flag (CTF) Competition 2020.",
+      title: "🥇 Winner of Dubai World Police Summit 2023 AI Challenge, UAE",
     },
     {
-      title: "Runner-up of MTC BPDC’s CodeBlitz Competition 2020.",
+      title: "🥇 Winner of PIED CEL’s Desert Hack Hackathon 2022.",
     },
     {
-      title: "Shortlisted for finals of the Emirates Robotics Competition 2023, by Dubai Future Foundation x RIT Dubai, UAE.",
+      title: "🥇 Winner of ACM BPDC’s Capture The Flag (CTF) Competition 2020.",
     },
     {
-      title: "Shortlisted for top 20 finalists all over Arab nations in the ITAS Arab Youth Competition 2023, Qatar.",
+      title: "🥈 Runner-up of MTC BPDC’s CodeBlitz Competition 2020.",
     },
     {
-      title: "Winners of BITS Sports Festival Cricket Tournament 2019.",
+      title: "🎖️ Shortlisted for Top 10 Finalists of the Emirates Robotics Competition 2023, by Dubai Future Foundation x RIT Dubai, UAE.",
     },
     {
-      title: "Runner up of BITS Sports Festival Cricket Tournament 2022.",
+      title: "🎖️ Shortlisted for top 20 finalists all over Arab nations in the ITAS Arab Youth Competition 2023, Qatar.",
+    },
+    {
+      title: "🥇 Winners of BITS Sports Festival Cricket Tournament 2019.",
+    },
+    {
+      title: "🥈 Runner up of BITS Sports Festival Cricket Tournament 2022.",
     },
     
   ]
 
   const research = [
     {
-      title: 'Published Research Paper : "Classification of Microstructure Images of Metals Using Transfer Learning". MDIS 2022 8th International Conference, Sibiu, Romania, Springer 2022 | doi: 10.1007/978-3-031-27034-5  ',
-      link: "https://doi.org/10.1007/978-3-031-27034-5"
+      title: "Align2Act: Instruction-Tuned Models for Human-Aligned Autonomous Driving",
+      status: "Graduate Research",
+      venue: "New York University · Center for Data Science",
+      year: "2025",
+      summary:
+        "Investigates aligning autonomous driving agents with natural language instructions through instruction tuning and evaluation.",
+      link: "https://arxiv.org/abs/2510.10503",
+      linkLabel: "arxiv",
+      tags: ["LLMs", "Autonomous Systems"],
     },
     {
-      title: 'Published Research Paper : "An End-to-End Hybrid Learning model for detection of Covid-19 from Chest X-ray images". ICAIA-ATCON-1, 2023 International Conference, Bengaluru, India, IEEE 2023 | doi: 10.1109/ICAIA57370.2023.10169832  ',
-      link: "https://doi.org/10.1109/ICAIA57370.2023.10169832"
+      title: "Population-Coded Spiking Neural Networks for High-Dimensional Robotic Control",
+      status: "Graduate Research",
+      venue: "New York University · Robotics & Neuromorphic Computing",
+      year: "2025",
+      summary:
+        "Develops population-coded SNN architectures to enable efficient continuous control in robotics with neuromorphic hardware.",
+      link: "https://arxiv.org/abs/2510.10516",
+      linkLabel: "arxiv",
+      tags: ["Spiking Neural Networks", "Robotics"],
     },
     {
-      title: 'Research Paper under Review : "Multi-model approach for autonomous driving: A state-of-art deep learning approach on traffic sign detection, vehicle detection & lane detection".Multimedia Tools and Applications, An International Journal, Springer 2024. ',
+      title: "Classification of Microstructure Images of Metals Using Transfer Learning",
+      status: "Published Paper",
+      venue: "MDIS 2022 · Sibiu, Romania · Springer",
+      year: "2022",
+      summary:
+        "Applied transfer learning to accurately classify microscopic metal structures, contributing to automated materials analysis.",
+      link: "https://doi.org/10.1007/978-3-031-27034-5",
+      linkLabel: "Springer DOI",
+      tags: ["Computer Vision", "Transfer Learning"],
     },
     {
-      title: 'On going Research works : "Deep Reinforcement Learning with Population-Coded Spiking Neural Network for Continuous Control", "Multi AI Agents systems" , "LLMs with Self Reflection", "MultiModal LLMs" ....  ',
+      title: "An End-to-End Hybrid Learning Model for Detection of Covid-19 from Chest X-ray Images",
+      status: "Published Paper",
+      venue: "ICAIA-ATCON-1 2023 · Bengaluru, India · IEEE",
+      year: "2023",
+      summary:
+        "Designed a hybrid CNN + LSTM architecture to improve Covid-19 diagnosis from chest radiography with rigorous benchmarking.",
+      link: "https://doi.org/10.1109/ICAIA57370.2023.10169832",
+      linkLabel: "IEEE DOI",
+      tags: ["Medical Imaging", "Hybrid Deep Learning"],
+    },
+    {
+      title:
+        "Multi-model Approach for Autonomous Driving: A State-of-the-Art Deep Learning Strategy on Traffic Sign, Vehicle, and Lane Detection",
+      status: "Under Review",
+      venue: "Multimedia Tools and Applications · Springer",
+      year: "2024",
+      summary:
+        "Explores an ensemble of perception models for autonomous driving, combining detection, segmentation, and tracking pipelines.",
+      tags: ["Autonomous Driving", "Deep Learning"],
+    },
+    
+    {
+      title:
+        "Ongoing Explorations: DRL with Population-Coded SNNs, Multi-Agent AI Systems, Reflective LLMs, and Multimodal LLM Architectures",
+      status: "In Progress",
+      venue: "Personal Research Initiatives",
+      summary:
+        "Prototyping cross-disciplinary ideas that bridge reinforcement learning, spiking networks, collaborative agents, and multimodal LLM pipelines.",
+      tags: ["Research & Exploration"],
     },
   ]
+  
   
   const technologies = [
     {
@@ -122,9 +179,25 @@ import bits from "../assets/bits.jpg"
       name:"R",
       icon: "https://img.icons8.com/?size=100&id=CLvQeiwFpit4&format=png&color=000000",
     },
+    // {
+    //   name: "scikit-learn",
+    //   icon: "https://img.icons8.com/color/480/000000/scikit-learn.png",
+    // },
+    // {
+    //   name: "Pandas",
+    //   icon: "https://img.icons8.com/color/480/pandas.png",
+    // },
     {
       name:"AWS",
       icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+    },
+    // {
+    //   name: "MLflow",
+    //   icon: "https://mlflow.org/docs/latest/_static/MLflow-logo-final-black.png",
+    // },
+    {
+      name: "Docker",
+      icon: "https://img.icons8.com/color/480/docker.png",
     },
     {
       name: "OpenCV",
@@ -675,6 +748,48 @@ import bits from "../assets/bits.jpg"
   
   const experiences = [
     {
+      title: "Graduate Student Researcher",
+      company_name: "NYU Langone Health",
+      icon: "https://pbs.twimg.com/profile_images/1675847757850988544/qDE0W0XQ_400x400.jpg",
+      iconBg: "#570f8c",
+      date: "Apr 2025 - Present",
+      link: "https://nyulangone.org",
+      points: [
+        "Built a data product analyzing sentiments in restaurant reviews, identifying impact factors over a timeperiod.",
+        "Applied Semi Supervised Learning Techniques to predict house prices and restaurant meal prices.",
+        "Designed robust collectors & built Databricks pipelines for data collection, reduced data retrieval time by 20%.",
+        "Utilized SQL queries to extract valuable insights and performed data visualization for better decision-making.",
+      ],
+      link: "https://media.licdn.com/dms/image/v2/D4E0BAQHRXPhuM8m0jw/company-logo_200_200/B4EZmXdjPzKgAI-/0/1759182730641/open_healthcare_us_logo?e=2147483647&v=beta&t=5g8g1b3Rhqzw598Gauj6HQOJ8jPNvVQHmpx-RwuKLAM",
+    },
+    {
+      title: "Founding Engineer",
+      company_name: "LaRa Home",
+      icon: "https://media.licdn.com/dms/image/v2/D4D22AQGvPp1yHZduLQ/feedshare-shrink_800/B4DZdXwMkWGUAk-/0/1749523943164?e=2147483647&v=beta&t=hyasPp_V_-4Jffecec29aKanJ1ohi3ojNPsuE9d5I-U",
+      iconBg: "#232452",
+      date: "Feb 2025 - Present",
+      link: "https://www.larahome.info",
+      points: [
+        "Built a data product analyzing sentime pipelines for data collection, reduced data retrieval time by 20%.",
+        "Utilized SQL queries to extract valuable insights and performed data visualization for better decision-making.",
+      ],
+      link: "https://www.larahome.info/about",
+    },
+
+    {
+      title: "Data Science Intern",
+      company_name: "Open Healthcare US",
+      icon: "https://media.licdn.com/dms/image/v2/D4E0BAQHRXPhuM8m0jw/company-logo_200_200/B4EZmXdjPzKgAI-/0/1759182730641/open_healthcare_us_logo?e=2147483647&v=beta&t=5g8g1b3Rhqzw598Gauj6HQOJ8jPNvVQHmpx-RwuKLAM",
+      iconBg: "#fcfcfcff",
+      date: "May 2025 - Aug 2025",
+      link: "https://us.ohc.global/",
+      points: [
+        "Delivered a production-ready AI doctor chatbot combining speech-to-text (OpenAI Whisper V3), text-to-speech (ElevenLabs), and real-time avatar streaming (HeyGen SDK). Implemented agentic RAG architecture with FastAPI-React stack to provide intelligent, human-like diagnostic interactions for healthcare applications.",
+        "Developed an end-to-end sales automation platform integrating OpenAI for smart lead analysis, Apollo.io for contact enrichment, and Salesforce for automated pipeline management. Containerized deployment using Docker and FastAPI enabled seamless CRM synchronization and intelligent lead qualification at scale.",
+      ],
+      link: "https://media.licdn.com/dms/image/v2/D4E0BAQHRXPhuM8m0jw/company-logo_200_200/B4EZmXdjPzKgAI-/0/1759182730641/open_healthcare_us_logo?e=2147483647&v=beta&t=5g8g1b3Rhqzw598Gauj6HQOJ8jPNvVQHmpx-RwuKLAM",
+    },
+    {
       title: "Machine Learning Engineer",
       company_name: "Xneuronz AI",
       icon: "https://media.licdn.com/dms/image/v2/D560BAQGP7fo1r0ky6Q/company-logo_200_200/company-logo_200_200/0/1707857824526/xneuronz_ai_logo?e=2147483647&v=beta&t=ZM_WDVGDQzQL7W41uE_pdPhkSoEex-Ep5ZexaosjSko",
@@ -770,7 +885,7 @@ import bits from "../assets/bits.jpg"
       // marks:
       //   "CGPA : 9.42 / 10",
       name: "New York University, Center for Data Science",
-      year: "2024 - 2026 (expected)",
+      year: "2024 - 2026",
       image: "https://www.ssrc.org/wp-content/uploads/2022/08/NYU-modified.png",
     },
     {
@@ -796,13 +911,16 @@ import bits from "../assets/bits.jpg"
   ];
 
   const about = {
-    name: "Kanishkha Jain",
+    name: "Kanishkha",
     title: "Machine Learning Engineer",
     description1:
-      "Hi there! 👋 I’m Kanishkha, a curious tech enthusiast obsessed with Artificial Intelligence, Innovation 🚀, and product development 🧑🏻‍💻. Currently gearing up for my Master’s in Data Science at New York University 🗽🎓.",
-    description2: "I graduated in Computer Science from BITS Pilani, where I co-authored two publications in ML domain 📚. I’ve also dabbled in everything from Machine Learning and Data Engineering to building cool products during my internships 🛠️.",
-    description3: "I speak fluent Python 🐍 (and a bit of R, SQL, and C++), love playing around with frameworks like PyTorch and TensorFlow, and have a slight obsession with Large Language Models and Robotics 🤖.",
-    description4: "If you’re looking for someone who’s always game for solving big problems with tech and having a little fun 😄 along the way , I’m your person. Let’s connect and create something awesome together!! 🚀🚀",
+      "Hey there! I’m Kanishkha—a machine learning engineer who loves taking research ideas off the whiteboard and shipping them as real products. I’m heading to NYU’s Center for Data Science, where I’ll keep chasing the sweet spot between academic rigor and product velocity.",
+    description2:
+      "From BITS Pilani to startups and AI labs, I’ve built systems that span inference to infrastructure: multi-agent copilots, RAG platforms, floor-plan generators, and AI doctors with voice, motion, and bedside manners. If it blends algorithms, storytelling, and user delight, I’m probably knee-deep in it.",
+    description3:
+      "Python is my native tongue, but I also think in PyTorch, LangChain, CrewAI, MLflow, Docker, and Databricks. I care about observability, reproducibility, and the humans behind the dashboards just as much as the models themselves.",
+    description4:
+      "Outside of work, you’ll find me jamming on quiz trivia, tinkering with robotics, or sketching wild ideas for the next hackathon. If you’re building something audacious in AI, let’s talk—I’m always up for the next adventure.",
   };
   
   export { list, profiles, technologies, experiences, educations, achievements, research, about };

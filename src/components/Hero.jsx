@@ -40,11 +40,11 @@ const Hero = () => {
         
         <div className="absolute link1">        
         <a
-          href="https://github.com/Jkanishkha0305" target="_blank">
+          href="https://github.com/Jkanishkha0305" target="_blank" rel="noopener noreferrer">
           <AiOutlineGithub />
         </a>
         <a
-          href="https://www.linkedin.com/in/jkanishkha/" target="_blank">
+          href="https://www.linkedin.com/in/jkanishkha/" target="_blank" rel="noopener noreferrer">
           <ImLinkedin />
         </a>
         {/* <a
@@ -52,7 +52,7 @@ const Hero = () => {
           <AiOutlineInstagram />
         </a> */}
         <a
-          href="https://linktr.ee/jkanishkha" target="_blank">
+          href="https://linktr.ee/jkanishkha" target="_blank" rel="noopener noreferrer">
           <BiLinkAlt />
         </a>
 

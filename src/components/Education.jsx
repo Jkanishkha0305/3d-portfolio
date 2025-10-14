@@ -27,8 +27,8 @@ const FeedbackCard = ({
           width="80" height="80"
           className='rounded-full object-cover'
         />
-        <div className='mt-3 flex-1 flex flex-col'>
-          <p className='text-center text-white font-medium text-[16px]'>
+        <div className='mt-4 flex-1 flex flex-col'>
+          <p className='text-center text-white font-medium text-[19px]'>
             <span className='text-center blue-text-gradient'>{name}</span> 
           </p>
           <p className='text-center mt-1 text-secondary text-[12px]'>
@@ -38,10 +38,10 @@ const FeedbackCard = ({
 
       </div>
 
-    <p className='text-white font-black text-[48px]'>"</p>
+    {/* <p className='text-white font-black text-[48px]'>"</p> */}
 
     <div className='mt-1'>
-      <p className='text-center text-white tracking-wider text-[18px]'>{degree}</p>
+      <p className='text-center green-text-gradient tracking-wider text-[18px]'>{degree}</p>
       <p className='mt-3 text-center pink-text-gradient'>{branch}</p>
       <p className='mt-3 text-center green-text-gradient'>{marks}</p>
 

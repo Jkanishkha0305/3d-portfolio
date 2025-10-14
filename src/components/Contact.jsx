@@ -136,12 +136,24 @@ const Contact = () => {
         <div className="mt-5 contact__options">
           <article className="contact__option">
             <MdEmail />
-            <a href="mailto:jkanishkha0305@gmail.com" target="_blank" className="blue-text-gradient">jkanishkha0305@gmail.com</a>
+            <a
+              href="mailto:jkanishkha0305@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="blue-text-gradient"
+            >
+              jkanishkha0305@gmail.com
+            </a>
           </article>
           <article className="contact__option">
             <BsWhatsapp />
-            <a href="https://api.whatsapp.com/send/?phone=917040031669&text&app_absent=0&lang=en" target="_blank" className="blue-text-gradient">
-              +91 9840728237
+            <a
+              href="https://api.whatsapp.com/send/?phone=917040031669&text&app_absent=0&lang=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="blue-text-gradient"
+            >
+              +1 (347) 200-9240
             </a>
           </article>
         </div>

@@ -119,13 +119,14 @@ const Project = () => {
       </motion.div>
 
       <div className='project w-full flex'>
-        <motion.p whileInView={{ opacity: 1 , transform : 'none'}}
+        <motion.div whileInView={{ opacity: 1 , transform : 'none'}}
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] leading-[30px]'
         >
         <ul>
         {list.map((item) => (
           <ProjectList
+            key={item.id}
             title={item.title}
             active={selected === item.id}
             setSelected={setSelected}
@@ -136,14 +137,12 @@ const Project = () => {
 
       <div className='box mt-20 flex flex-wrap justify-center'>
         {data.map((project, index) => (
-          <div>
-            <ProjectCard key={`project-${index}`} index={index} {...project} />
-          </div>
+            <ProjectCard key={`project-${project.name}`} index={index} {...project} />
         ))}
       </div>
 
 
-      </motion.p>
+      </motion.div>
       </div>
 
     </>

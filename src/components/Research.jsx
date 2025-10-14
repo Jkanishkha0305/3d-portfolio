@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-import { fadeIn, textVariant } from "../utils/motion";
-import { research } from "../constants"; // Import the research list
-import "./Achievement.scss";
+import { fadeIn, textVariant, staggerContainer } from "../utils/motion";
+import { research } from "../constants";
+import "./Research.scss";
 
 const Research = () => {
   return (
@@ -18,32 +18,75 @@ const Research = () => {
           <h2 className={styles.sectionHeadText}>Research.</h2>
         </motion.div>
       </div>
-      <div className={`-mt-20 justify-center p-6 ${styles.paddingX} gap-7`}>
-        <ul className='mt-5 list-disc ml-5 space-y-2'>
-          {research.map((research, index) => (
-            <li key={index} className='text-white-100 text-[15px] pl-1'>
-              {/* Embed the link in the title */}
-               
-              {research.link ? (
-                <>
-                  {research.title}
-                  <a
-                    href={research.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-400 underline"
-                  >
-                    Link
-                  </a>
-                </>
-              ) : (
-                <>
-                  {research.title}
-                </>
+      <div className={`-mt-20 justify-center p-6 ${styles.paddingX}`}>
+        <motion.ul
+          className='research-grid'
+          variants={staggerContainer(0.12, 0.2)}
+          initial='hidden'
+          whileInView='show'
+          viewport={{ once: true, amount: 0.25 }}
+        >
+          {research.map((item, index) => (
+            <motion.li
+              key={item.title}
+              className='research-card'
+              variants={fadeIn("up", "spring", 0, 0.6)}
+              whileHover={{ y: -6, scale: 1.01 }}
+            >
+              <div className='research-card__header'>
+                {item.status && (
+                  <span className='research-status'>{item.status}</span>
+                )}
+                {item.year && <span className='research-year'>{item.year}</span>}
+              </div>
+
+              <h3 className='research-title'>{item.title}</h3>
+
+              {item.venue && (
+                <p className='research-venue'>{item.venue}</p>
               )}
-            </li>
+
+              {item.summary && (
+                <p className='research-summary'>{item.summary}</p>
+              )}
+
+              {item.tags && item.tags.length > 0 && (
+                <div className='research-tags'>
+                  {item.tags.map((tag) => (
+                    <span key={`${item.title}-${tag}`} className='research-tag'>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
+
+              {(item.link || item.repository) && (
+                <div className='research-actions'>
+                  {item.link && (
+                    <a
+                      href={item.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className='research-link'
+                    >
+                      {item.linkLabel || "View publication"}
+                    </a>
+                  )}
+                  {item.repository && (
+                    <a
+                      href={item.repository}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className='research-link secondary'
+                    >
+                      {item.repositoryLabel || "View project"}
+                    </a>
+                  )}
+                </div>
+              )}
+            </motion.li>
           ))}
-        </ul>
+        </motion.ul>
       </div>
     </div>
   );
