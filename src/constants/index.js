@@ -52,7 +52,10 @@ import bits from "../assets/bits.jpg"
 
   const achievements = [
     {
-      title: "🥇 First Place in 'Best use of Linkup' @AI Agents Hackathon NYC, 2025.",
+      title: "🥈 Second Place in Real-Time Data AI Hackathon (LENSES X AWS X Ness), NYC 2025.",
+    },
+    {
+      title: "🥇 First Place in Best use of Linkup, AI Agents Hackathon NYC, 2025.",
     },
     {
       title: "🥇 First Place in HackWallStreet x Deskhead Hackathon, 2024. ",
@@ -72,9 +75,9 @@ import bits from "../assets/bits.jpg"
     {
       title: "🥇 Winner of ACM BPDC’s Capture The Flag (CTF) Competition 2020.",
     },
-    {
-      title: "🥈 Runner-up of MTC BPDC’s CodeBlitz Competition 2020.",
-    },
+    // {
+    //   title: "🥈 Runner-up of MTC BPDC’s CodeBlitz Competition 2020.",
+    // },
     {
       title: "🎖️ Shortlisted for Top 10 Finalists of the Emirates Robotics Competition 2023, by Dubai Future Foundation x RIT Dubai, UAE.",
     },
@@ -100,7 +103,7 @@ import bits from "../assets/bits.jpg"
         "Investigates aligning autonomous driving agents with natural language instructions through instruction tuning and evaluation.",
       link: "https://arxiv.org/abs/2510.10503",
       linkLabel: "arxiv",
-      tags: ["LLMs", "Autonomous Systems"],
+      tags: ["Prof Advisor: Dr. Mengye Ren"],
     },
     {
       title: "Population-Coded Spiking Neural Networks for High-Dimensional Robotic Control",
@@ -111,7 +114,15 @@ import bits from "../assets/bits.jpg"
         "Develops population-coded SNN architectures to enable efficient continuous control in robotics with neuromorphic hardware.",
       link: "https://arxiv.org/abs/2510.10516",
       linkLabel: "arxiv",
-      tags: ["Spiking Neural Networks", "Robotics"],
+      tags: ["Prof Advisor: Dr. Todd Gureckis"],
+    },
+    {
+      title: "Multi-Turn RL for On-Device Mental Health Agents",
+      status: "In Progress",
+      venue: "New York University Langone Health",
+      summary:
+        "Exploring hierarchical reinforcement learning (ArCHer framework) to train small language models for adaptive, multi-turn therapeutic dialogue and efficient on-device deployment.",
+      tags: ["Prof. Advisor: Dr. Zhe Chen"]
     },
     {
       title: "Classification of Microstructure Images of Metals Using Transfer Learning",
@@ -146,15 +157,7 @@ import bits from "../assets/bits.jpg"
       tags: ["Autonomous Driving", "Deep Learning"],
     },
     
-    {
-      title:
-        "Ongoing Explorations: DRL with Population-Coded SNNs, Multi-Agent AI Systems, Reflective LLMs, and Multimodal LLM Architectures",
-      status: "In Progress",
-      venue: "Personal Research Initiatives",
-      summary:
-        "Prototyping cross-disciplinary ideas that bridge reinforcement learning, spiking networks, collaborative agents, and multimodal LLM pipelines.",
-      tags: ["Research & Exploration"],
-    },
+    
   ]
   
   
@@ -755,12 +758,12 @@ import bits from "../assets/bits.jpg"
       date: "Apr 2025 - Present",
       link: "https://nyulangone.org",
       points: [
-        "Built a data product analyzing sentiments in restaurant reviews, identifying impact factors over a timeperiod.",
-        "Applied Semi Supervised Learning Techniques to predict house prices and restaurant meal prices.",
-        "Designed robust collectors & built Databricks pipelines for data collection, reduced data retrieval time by 20%.",
-        "Utilized SQL queries to extract valuable insights and performed data visualization for better decision-making.",
+        "Fine-tuned SLMs (Phi-3 1B, LLaMA-3 1B, Qwen-1.7B) on mental-health datasets such as MentalChat16K, MHQA, and PsychBench.",
+        "Implementing (ARCHER)hierarchical actor–critic RL to optimize long-horizon interactions, enabling the model to adaptively reason, recall, and personalize multi-turn therapy-like conversations.",
+        "Exploring alignment strategies (ORPO, DPO, RLHF) to balance empathy, safety, and domain relevance within constrained compute limits.",
+        "Evaluating model empathy and therapeutic reasoning using PsyEval, MentaLLaMA, and EQ-Bench frameworks.",
       ],
-      link: "https://media.licdn.com/dms/image/v2/D4E0BAQHRXPhuM8m0jw/company-logo_200_200/B4EZmXdjPzKgAI-/0/1759182730641/open_healthcare_us_logo?e=2147483647&v=beta&t=5g8g1b3Rhqzw598Gauj6HQOJ8jPNvVQHmpx-RwuKLAM",
+      link: "",
     },
     {
       title: "Founding Engineer",
@@ -770,10 +773,11 @@ import bits from "../assets/bits.jpg"
       date: "Feb 2025 - Present",
       link: "https://www.larahome.info",
       points: [
-        "Built a data product analyzing sentime pipelines for data collection, reduced data retrieval time by 20%.",
-        "Utilized SQL queries to extract valuable insights and performed data visualization for better decision-making.",
+        "Built an end-to-end fullstack AI application integrating a user friendly frontend, database and FastAPI backend to automate floorplan-to-code compliance checks.",
+        "Interviewed and collaborated with 10+ architects and firms to identify pain points, shape product design, and enhance compliance workflows.",
+        "Developed intelligent rule-checking pipelines reducing manual validation time and improving accuracy for architectural compliance review."
       ],
-      link: "https://www.larahome.info/about",
+      link: "https://lara-home.streamlit.app",
     },
 
     {
@@ -884,7 +888,7 @@ import bits from "../assets/bits.jpg"
         "Data Science",
       // marks:
       //   "CGPA : 9.42 / 10",
-      name: "New York University, Center for Data Science",
+      name: "New York University",
       year: "2024 - 2026",
       image: "https://www.ssrc.org/wp-content/uploads/2022/08/NYU-modified.png",
     },

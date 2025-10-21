@@ -12,6 +12,9 @@ import Education from './Education';
 import Footer from './Footer';
 import About from './About';
 import Research from './Research';
+import ShootingStars from './ShootingStars';
+import FloatingParticles from './FloatingParticles';
+import AnimatedGradient from './AnimatedGradient';
 
 export {
   Hero,
@@ -22,13 +25,16 @@ export {
   Project,
   Education,
   Contact,
-  EarthCanvas, 
-  BallCanvas, 
-  ComputersCanvas, 
+  EarthCanvas,
+  BallCanvas,
+  ComputersCanvas,
   StarsCanvas,
   Profile,
   Footer,
   Achievement,
   About,
   Research,
+  ShootingStars,
+  FloatingParticles,
+  AnimatedGradient,
 }

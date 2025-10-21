@@ -9,6 +9,38 @@ $maincolor: rgb(3, 3, 37);
     .project-box
     {
         height: 500px;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(242, 114, 200, 0.1),
+                transparent
+            );
+            transition: left 0.6s;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        &:hover {
+            box-shadow: 0 0 40px rgba(242, 114, 200, 0.4),
+                        0 0 80px rgba(139, 92, 246, 0.2),
+                        0 20px 60px rgba(0, 0, 0, 0.4);
+            transform: translateY(-10px);
+
+            &::before {
+                left: 100%;
+            }
+        }
     }
 
     ul
@@ -28,32 +60,48 @@ $maincolor: rgb(3, 3, 37);
     .Box1
     {
         cursor: pointer;
+        overflow: hidden;
+
         .image
         {
             z-index: 1;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
         h3, .title
         {
             opacity: 0;
+            transition: all 0.4s ease;
         }
+
+        h3 {
+            transform: translateY(20px);
+        }
+
         &:hover
         {
             background-color: $maincolor;
+
             .image
             {
-                opacity: 0.2;
+                opacity: 0.15;
                 z-index: 0;
+                transform: scale(1.1) rotate(2deg);
+                filter: blur(2px);
             }
             h3
             {
                 opacity: 1;
                 z-index: 1;
                 color: rgb(255, 255, 255);
+                transform: translateY(0);
+                text-shadow: 0 0 20px rgba(242, 114, 200, 0.8),
+                            0 0 40px rgba(139, 92, 246, 0.6);
             }
             .title
             {
                 opacity: 1;
                 z-index: 1;
+                transform: scale(1.1);
             }
 
         }
@@ -62,5 +110,26 @@ $maincolor: rgb(3, 3, 37);
     .box
     {
             gap: 1.75rem;
+    }
+}
+
+// Tag hover effects
+.project-box .flex.flex-wrap p {
+    transition: all 0.3s ease;
+    cursor: default;
+
+    &:hover {
+        transform: translateY(-3px) scale(1.05);
+        text-shadow: 0 0 10px currentColor;
+    }
+}
+
+// GitHub/Demo button animations
+.black-gradient {
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: scale(1.15) rotate(5deg);
+        box-shadow: 0 0 15px rgba(242, 114, 200, 0.6);
     }
 }

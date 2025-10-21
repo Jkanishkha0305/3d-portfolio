@@ -52,7 +52,7 @@ const Navbar = () => {
               className={`top2 ${"text-secondary"
               } hover:text-white text-[15px] font-medium cursor-pointer`}
             >
-              <a href="https://drive.google.com/file/d/1dwaax7D2VMzyUncSqBr1SU50N8-rI_qi/view?usp=sharing" target="_blank" rel="noopener noreferrer"> <b> Resume </b></a>
+              <a href="https://drive.google.com/file/d/17GPR5797uZpnbZ0Kg-uG--72pnBD2Vmi/view?usp=sharing" target="_blank" rel="noopener noreferrer"> <b> Resume </b></a>
           </div>
         </div>
       </div>

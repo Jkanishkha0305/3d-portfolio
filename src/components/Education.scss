@@ -2,10 +2,13 @@
     --tw-bg-opacity: 1;
     background-color: rgb(9 3 17 / var(--tw-bg-opacity));
     position: relative;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+                box-shadow 0.4s ease,
+                background-color 0.3s ease;
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.1),
                 0 0 60px rgba(255, 255, 255, 0.05),
                 inset 0 0 80px rgba(255, 255, 255, 0.03);
+    overflow: hidden;
 
     &::before,
     &::after {
@@ -40,11 +43,37 @@
     }
 
     &:hover {
-        transform: perspective(1000px) rotateX(5deg) rotateY(5deg) scale(1.02);
-        box-shadow: 0 0 40px rgba(255, 255, 255, 0.2),
-                    0 0 80px rgba(255, 255, 255, 0.1),
-                    inset 0 0 100px rgba(255, 255, 255, 0.05);
+        transform: perspective(1000px) rotateX(5deg) rotateY(5deg) scale(1.05) translateY(-5px);
+        box-shadow: 0 0 50px rgba(242, 114, 200, 0.3),
+                    0 0 80px rgba(139, 92, 246, 0.2),
+                    0 20px 40px rgba(0, 0, 0, 0.3),
+                    inset 0 0 100px rgba(242, 114, 200, 0.08);
+        background-color: rgb(15 5 25 / var(--tw-bg-opacity));
+
+        img {
+            transform: scale(1.1) rotate(5deg);
+            filter: brightness(1.2);
+        }
+
+        .blue-text-gradient,
+        .green-text-gradient,
+        .pink-text-gradient {
+            text-shadow: 0 0 10px currentColor;
+        }
     }
+}
+
+// Image hover effect
+.Box2 img {
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+                filter 0.3s ease;
+}
+
+// Text gradient glow effects
+.Box2 .blue-text-gradient,
+.Box2 .green-text-gradient,
+.Box2 .pink-text-gradient {
+    transition: text-shadow 0.3s ease;
 }
 
 @keyframes cornerDrift {

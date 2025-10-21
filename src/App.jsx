@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 
-import {Contact, Profile, About, Achievement, Experience, Education, Hero, Navbar, Tech, Project, Research, StarsCanvas, Content, Footer } from "./components";
+import {Contact, Profile, About, Achievement, Experience, Education, Hero, Navbar, Tech, Project, Research, StarsCanvas, Content, Footer, FloatingParticles } from "./components";
 
 const App = () => {
 
@@ -13,12 +13,30 @@ const App = () => {
           <Hero />
         </div>
         <Content />
-        <About />
-        <Education />
-        <Project />
-        <Experience />
-        <Achievement />
-        <Research />
+        <div className='relative z-0'>
+          <About />
+          <FloatingParticles />
+        </div>
+        <div className='relative z-0'>
+          <Education />
+          <FloatingParticles />
+        </div>
+        <div className='relative z-0'>
+          <Project />
+          <FloatingParticles />
+        </div>
+        <div className='relative z-0'>
+          <Experience />
+          <FloatingParticles />
+        </div>
+        <div className='relative z-0'>
+          <Achievement />
+          <FloatingParticles />
+        </div>
+        <div className='relative z-0'>
+          <Research />
+          <FloatingParticles />
+        </div>
         <Profile/>
         <Tech />
         <div className='relative z-0'>
