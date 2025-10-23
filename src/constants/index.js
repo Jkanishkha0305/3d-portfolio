@@ -918,13 +918,13 @@ import bits from "../assets/bits.jpg"
     name: "Kanishkha",
     title: "Machine Learning Engineer",
     description1:
-      "Hey there! I’m Kanishkha—a machine learning engineer who loves taking research ideas off the whiteboard and shipping them as real products. I’m heading to NYU’s Center for Data Science, where I’ll keep chasing the sweet spot between academic rigor and product velocity.",
+      "👋 Hi, I'm Kanishkha! I turn research ideas into production-ready ML systems 🚀. Currently at NYU's Center for Data Science, navigating the eternal quest of making models that work as well in production as they do in Jupyter notebooks 📊.",
     description2:
-      "From BITS Pilani to startups and AI labs, I’ve built systems that span inference to infrastructure: multi-agent copilots, RAG platforms, floor-plan generators, and AI doctors with voice, motion, and bedside manners. If it blends algorithms, storytelling, and user delight, I’m probably knee-deep in it.",
+      "My journey spans BITS Pilani, startups, and AI research labs where I've shipped multi-agent systems 🤖, conversational AI 💬, and healthcare solutions 🏥. I specialize in building ML that's both technically sound and genuinely useful.",
     description3:
-      "Python is my native tongue, but I also think in PyTorch, LangChain, CrewAI, MLflow, Docker, and Databricks. I care about observability, reproducibility, and the humans behind the dashboards just as much as the models themselves.",
+      "Fluent in Python 🐍, PyTorch, LangChain, Docker 🐳, and the art of debugging at 2 AM ☕. I believe in clean code, reproducible experiments, and infrastructure that doesn't mysteriously break on Fridays. Also, a strong advocate for version control and meaningful variable names.",
     description4:
-      "Outside of work, you’ll find me jamming on quiz trivia, tinkering with robotics, or sketching wild ideas for the next hackathon. If you’re building something audacious in AI, let’s talk—I’m always up for the next adventure.",
+      "Beyond code: Trivia champion 🧠 | Hackathon winner 🏆 | Robotics hobbyist 🔧 | Sports enthusiast 🏏⚽🏓. Building something cool in AI/ML? Let's talk, I bring technical expertise, product thinking, and surprisingly good coffee recommendations ☕✨.",
   };
   
   export { list, profiles, technologies, experiences, educations, achievements, research, about };
