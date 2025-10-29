@@ -1,3 +1,22 @@
+/* Date Styling - Make dates visible and prominent */
+.vertical-timeline-element-date {
+  color: #aaa6c3 !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  opacity: 1 !important;
+  padding: 8px 16px !important;
+  background: rgba(29, 24, 54, 0.6) !important;
+  border-radius: 8px !important;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease !important;
+}
+
+.vertical-timeline-element-date:hover {
+  color: #f272c8 !important;
+  background: rgba(242, 114, 200, 0.1) !important;
+  transform: translateY(-2px);
+}
+
 /* Experience Card Hover Effects */
 .vertical-timeline-element-content {
   transition: all 0.3s ease-in-out !important;
