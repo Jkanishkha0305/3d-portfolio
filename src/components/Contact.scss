@@ -1,26 +1,75 @@
-.contact__options {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-  }
-  
-  .contact__option {
-    display: flex;
-    flex-direction: row;
-    padding: 0.6rem;
-    border-radius: 1.2rem;
-    text-align: center;
-    align-items: center;
-    border: 1px solid white;
-    gap: 0.8rem;
-  }
-  
-  .contact__option:hover {
-    text-decoration: underline;
-  }
+.contact-panel {
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 22px 46px rgba(8, 10, 26, 0.35);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
 
-  button
-  {
-    border: 2px solid #49a891;
-  }
-  
+.contact-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top left, rgba(34, 211, 238, 0.1), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(96, 165, 250, 0.08), transparent 32%);
+  pointer-events: none;
+}
+
+.contact-input {
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  background: rgba(15, 23, 42, 0.74) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.contact-input:focus {
+  border-color: rgba(125, 211, 252, 0.26) !important;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.12);
+  background: rgba(15, 23, 42, 0.88) !important;
+}
+
+.contact-submit {
+  border: 1px solid rgba(125, 211, 252, 0.18);
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.2), rgba(59, 130, 246, 0.3)) !important;
+  box-shadow: 0 14px 28px rgba(6, 10, 24, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.contact-submit:hover {
+  transform: translateY(-1px);
+  border-color: rgba(125, 211, 252, 0.28);
+  box-shadow: 0 18px 32px rgba(6, 10, 24, 0.34);
+}
+
+.contact__options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.contact__option {
+  display: flex;
+  flex-direction: row;
+  padding: 0.8rem 1rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(15, 23, 42, 0.56);
+  box-shadow: 0 12px 26px rgba(6, 10, 24, 0.22);
+  gap: 0.8rem;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.contact__option svg {
+  color: rgba(125, 211, 252, 0.9);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.contact__option:hover {
+  transform: translateY(-2px);
+  border-color: rgba(125, 211, 252, 0.22);
+  background: rgba(15, 23, 42, 0.72);
+}

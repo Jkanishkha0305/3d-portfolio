@@ -80,7 +80,7 @@ const Contact = () => {
 
       <motion.div whileInView={{ opacity: 1 , transform : 'none'}}
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
+        className='contact-panel flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
@@ -98,7 +98,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your good name?"
-              className='bg-tertiary py-3 px-3 placeholder:text-secondary text-white rounded-lg border-none font-medium'
+              className='contact-input bg-tertiary py-3 px-3 placeholder:text-secondary text-white rounded-lg border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
@@ -109,7 +109,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your web address?"
-              className='bg-tertiary py-3 px-3 placeholder:text-secondary text-white rounded-lg border-none font-medium'
+              className='contact-input bg-tertiary py-3 px-3 placeholder:text-secondary text-white rounded-lg border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
@@ -120,14 +120,14 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder='What you want to say?'
-              className='bg-tertiary py-3 px-3 placeholder:text-secondary text-white rounded-lg border-none font-medium'
+              className='contact-input bg-tertiary py-3 px-3 placeholder:text-secondary text-white rounded-lg border-none font-medium'
             />
           </label>
 
           
           <button
             type='submit'
-            className='bg-tertiary py-3 px-5 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+            className='contact-submit bg-tertiary py-3 px-5 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
           >
             {loading ? "Sending..." : "Send"}
           </button>
