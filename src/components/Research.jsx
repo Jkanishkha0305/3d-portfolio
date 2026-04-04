@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -8,6 +8,26 @@ import { research } from "../constants";
 import "./Research.scss";
 
 const Research = () => {
+  const scrollerRef = useRef(null);
+
+  const scrollCards = (direction) => {
+    const el = scrollerRef.current;
+    if (!el) return;
+    const card = el.querySelector(".research-card");
+    const cardWidth = card ? card.getBoundingClientRect().width + 20 : el.clientWidth * 0.9;
+    const step = el.clientWidth >= 1024 ? cardWidth * 3 : el.clientWidth >= 700 ? cardWidth * 2 : cardWidth;
+    el.scrollBy({ left: direction * step, behavior: "smooth" });
+  };
+
+  const getCrispSummary = (text, maxLength = 180) => {
+    if (!text) return "";
+    const normalized = text.replace(/\s+/g, " ").trim();
+    const sentences = normalized.match(/[^.!?]+[.!?]?/g) || [normalized];
+    const candidate = sentences.slice(0, 2).join(" ").trim();
+    if (candidate.length <= maxLength) return candidate;
+    return `${normalized.slice(0, maxLength - 3).trimEnd()}...`;
+  };
+
   return (
     <div className={`mt-12 bg-black-100 rounded-[20px]`}>
       
@@ -19,7 +39,26 @@ const Research = () => {
         </motion.div>
       </div>
       <div className={`-mt-20 justify-center p-6 ${styles.paddingX}`}>
+        <div className='carousel-toolbar'>
+          <button
+            type='button'
+            className='carousel-btn'
+            onClick={() => scrollCards(-1)}
+            aria-label='Scroll research left'
+          >
+            ←
+          </button>
+          <button
+            type='button'
+            className='carousel-btn'
+            onClick={() => scrollCards(1)}
+            aria-label='Scroll research right'
+          >
+            →
+          </button>
+        </div>
         <motion.ul
+          ref={scrollerRef}
           className='research-grid'
           variants={staggerContainer(0.12, 0.2)}
           initial='hidden'
@@ -31,7 +70,7 @@ const Research = () => {
               key={item.title}
               className='research-card'
               variants={fadeIn("up", "spring", 0, 0.6)}
-              whileHover={{ y: -6, scale: 1.01 }}
+              whileHover={{ y: -4 }}
             >
               <div className='research-card__header'>
                 {item.status && (
@@ -47,16 +86,19 @@ const Research = () => {
               )}
 
               {item.summary && (
-                <p className='research-summary'>{item.summary}</p>
+                <p className='research-summary'>{getCrispSummary(item.summary, 140)}</p>
               )}
 
               {item.tags && item.tags.length > 0 && (
                 <div className='research-tags'>
-                  {item.tags.map((tag) => (
+                  {item.tags.slice(0, 2).map((tag) => (
                     <span key={`${item.title}-${tag}`} className='research-tag'>
                       {tag}
                     </span>
                   ))}
+                  {item.tags.length > 2 && (
+                    <span className='research-tag muted'>+{item.tags.length - 2} more</span>
+                  )}
                 </div>
               )}
 
