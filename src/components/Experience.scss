@@ -1,126 +1,136 @@
-/* Date Styling - Make dates visible and prominent */
-.vertical-timeline-element-date {
-  color: #aaa6c3 !important;
-  font-size: 16px !important;
-  font-weight: 600 !important;
-  opacity: 1 !important;
-  padding: 8px 16px !important;
-  background: rgba(29, 24, 54, 0.6) !important;
-  border-radius: 8px !important;
-  backdrop-filter: blur(10px);
-  transition: all 0.3s ease !important;
-}
-
-.vertical-timeline-element-date:hover {
-  color: #f272c8 !important;
-  background: rgba(242, 114, 200, 0.1) !important;
-  transform: translateY(-2px);
-}
-
-/* Experience Card Hover Effects */
 .vertical-timeline-element-content {
-  transition: all 0.3s ease-in-out !important;
   position: relative;
   overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 18px 38px rgba(8, 10, 26, 0.38);
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease, background 0.25s ease !important;
 }
 
 .vertical-timeline-element-content:hover {
-  transform: scale(1.03) translateY(-5px);
-  box-shadow: 0 20px 40px rgba(242, 114, 200, 0.3),
-              0 0 20px rgba(242, 114, 200, 0.2) !important;
-  background: linear-gradient(135deg, #1d1836 0%, #2a2550 100%) !important;
+  transform: translateY(-4px);
+  box-shadow: 0 24px 44px rgba(6, 10, 24, 0.45) !important;
+  border-color: rgba(125, 211, 252, 0.18);
+  background: linear-gradient(135deg, #1d1836 0%, #252041 100%) !important;
 }
 
-/* Icon Pulse Animation */
-.vertical-timeline-element-icon {
-  animation: pulse 2s ease-in-out infinite;
-}
-
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(242, 114, 200, 0.7);
-  }
-  50% {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px 10px rgba(242, 114, 200, 0);
-  }
-}
-
-/* List Items Sequential Fade In */
-.experience-point {
-  opacity: 0;
-  animation: fadeInUp 0.6s ease-out forwards;
-}
-
-.experience-point:nth-child(1) { animation-delay: 0.1s; }
-.experience-point:nth-child(2) { animation-delay: 0.2s; }
-.experience-point:nth-child(3) { animation-delay: 0.3s; }
-.experience-point:nth-child(4) { animation-delay: 0.4s; }
-.experience-point:nth-child(5) { animation-delay: 0.5s; }
-.experience-point:nth-child(6) { animation-delay: 0.6s; }
-.experience-point:nth-child(7) { animation-delay: 0.7s; }
-.experience-point:nth-child(8) { animation-delay: 0.8s; }
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Shimmer Effect on Hover */
 .vertical-timeline-element-content::before {
-  content: '';
+  content: "";
   position: absolute;
-  top: 0;
-  left: -100%;
+  inset: 0;
+  background: linear-gradient(
+    145deg,
+    rgba(94, 234, 212, 0.06),
+    transparent 38%,
+    rgba(96, 165, 250, 0.08)
+  );
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+.vertical-timeline-element-icon {
+  overflow: hidden;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.95),
+    0 12px 28px rgba(7, 10, 24, 0.3) !important;
+}
+
+.experience-icon-shell {
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(242, 114, 200, 0.1),
-    transparent
-  );
-  transition: left 0.5s;
+  padding: 14%;
+  box-sizing: border-box;
+  border-radius: 999px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.vertical-timeline-element-content:hover::before {
-  left: 100%;
+.experience-icon-mark {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
 }
 
-/* Title and Company Animations */
 .experience-title {
-  transition: color 0.3s ease;
+  line-height: 1.2;
+  transition: color 0.2s ease;
 }
 
 .vertical-timeline-element-content:hover .experience-title {
-  background: linear-gradient(90deg, #f272c8, #8b5cf6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #f7fbff;
 }
 
-/* Link Hover Effect */
+.experience-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.experience-copy {
+  flex: 1 1 240px;
+}
+
+.experience-date-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 0.75rem;
+  border-radius: 0.9rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: rgba(226, 232, 240, 0.84);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: none;
+}
+
+.experience-point {
+  list-style: none;
+  position: relative;
+  padding-left: 1rem;
+  opacity: 1;
+  animation: none;
+  line-height: 1.7;
+  color: rgba(235, 241, 255, 0.88);
+}
+
+.experience-point::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #5eead4 0%, #38bdf8 100%);
+  box-shadow: none;
+}
+
 .experience-link {
   position: relative;
-  transition: all 0.3s ease;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .experience-link::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
   bottom: -2px;
   left: 50%;
-  background: linear-gradient(90deg, #f272c8, #8b5cf6);
+  background: linear-gradient(90deg, #5eead4, #60a5fa);
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
@@ -130,5 +140,15 @@
 }
 
 .experience-link:hover {
-  transform: translateY(-2px);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 640px) {
+  .experience-header {
+    align-items: stretch;
+  }
+
+  .experience-date-chip {
+    font-size: 0.72rem;
+  }
 }
