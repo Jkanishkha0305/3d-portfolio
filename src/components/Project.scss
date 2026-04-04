@@ -8,10 +8,12 @@ $maincolor: rgb(3, 3, 37);
 
     .project-box
     {
-        height: 500px;
+        min-height: 420px;
         position: relative;
         overflow: hidden;
-        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 18px 36px rgba(8, 10, 26, 0.36);
+        transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
 
         &::before {
             content: '';
@@ -23,7 +25,7 @@ $maincolor: rgb(3, 3, 37);
             background: linear-gradient(
                 90deg,
                 transparent,
-                rgba(242, 114, 200, 0.1),
+                rgba(94, 234, 212, 0.08),
                 transparent
             );
             transition: left 0.6s;
@@ -32,10 +34,9 @@ $maincolor: rgb(3, 3, 37);
         }
 
         &:hover {
-            box-shadow: 0 0 40px rgba(242, 114, 200, 0.4),
-                        0 0 80px rgba(139, 92, 246, 0.2),
-                        0 20px 60px rgba(0, 0, 0, 0.4);
-            transform: translateY(-10px);
+            box-shadow: 0 24px 46px rgba(6, 12, 24, 0.42);
+            border-color: rgba(125, 211, 252, 0.18);
+            transform: translateY(-6px);
 
             &::before {
                 left: 100%;
@@ -49,32 +50,42 @@ $maincolor: rgb(3, 3, 37);
         padding: 0;
         list-style: none;
         display: flex;
-        justify-content: center;  
+        justify-content: center;
+        gap: 0.75rem;
+        flex-wrap: wrap;
 
         li
         {
-            border: solid 2px #00e9ff;
-            border-radius: 10px;
-        }     
+            border: 1.5px solid rgba(34, 211, 238, 0.9);
+            border-radius: 999px;
+            background: rgba(13, 18, 40, 0.5);
+        }
     }
     .Box1
     {
         cursor: pointer;
         overflow: hidden;
+        border-radius: 1rem;
+        background-color: $maincolor;
 
         .image
         {
             z-index: 1;
-            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: transform 0.35s ease, opacity 0.35s ease, filter 0.35s ease;
         }
         h3, .title
         {
             opacity: 0;
-            transition: all 0.4s ease;
+            transition: all 0.3s ease;
         }
 
         h3 {
-            transform: translateY(20px);
+            transform: translateY(12px);
+            letter-spacing: 0.01em;
+        }
+
+        .title {
+            transform: translateY(8px);
         }
 
         &:hover
@@ -83,10 +94,10 @@ $maincolor: rgb(3, 3, 37);
 
             .image
             {
-                opacity: 0.15;
+                opacity: 0.18;
                 z-index: 0;
-                transform: scale(1.1) rotate(2deg);
-                filter: blur(2px);
+                transform: scale(1.05);
+                filter: blur(1.5px);
             }
             h3
             {
@@ -94,14 +105,13 @@ $maincolor: rgb(3, 3, 37);
                 z-index: 1;
                 color: rgb(255, 255, 255);
                 transform: translateY(0);
-                text-shadow: 0 0 20px rgba(242, 114, 200, 0.8),
-                            0 0 40px rgba(139, 92, 246, 0.6);
+                text-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
             }
             .title
             {
                 opacity: 1;
                 z-index: 1;
-                transform: scale(1.1);
+                transform: translateY(0);
             }
 
         }
@@ -109,27 +119,32 @@ $maincolor: rgb(3, 3, 37);
 
     .box
     {
-            gap: 1.75rem;
+            gap: 1.5rem;
     }
 }
 
-// Tag hover effects
+@media (max-width: 640px) {
+    .project {
+        .project-box {
+            min-height: 390px;
+        }
+    }
+}
+
 .project-box .flex.flex-wrap p {
-    transition: all 0.3s ease;
+    transition: transform 0.2s ease, opacity 0.2s ease;
     cursor: default;
 
     &:hover {
-        transform: translateY(-3px) scale(1.05);
-        text-shadow: 0 0 10px currentColor;
+        transform: translateY(-2px);
     }
 }
 
-// GitHub/Demo button animations
 .black-gradient {
-    transition: all 0.3s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 
     &:hover {
-        transform: scale(1.15) rotate(5deg);
-        box-shadow: 0 0 15px rgba(242, 114, 200, 0.6);
+        transform: translateY(-1px) scale(1.05);
+        box-shadow: 0 10px 20px rgba(6, 12, 24, 0.35);
     }
 }
