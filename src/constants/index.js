@@ -117,7 +117,7 @@ import bits from "../assets/bits.jpg"
       venue: "New York University · Center for Data Science",
       year: "2025",
       summary:
-        "Investigates aligning autonomous driving agents with natural language instructions through instruction tuning and evaluation.",
+        "Investigated aligning autonomous driving agents with natural language instructions through instruction tuning and evaluation.",
       link: "https://arxiv.org/abs/2510.10503",
       linkLabel: "arxiv",
       tags: ["Prof Advisor: Dr. Mengye Ren"],
@@ -128,7 +128,7 @@ import bits from "../assets/bits.jpg"
       venue: "New York University · Robotics & Neuromorphic Computing",
       year: "2025",
       summary:
-        "Develops population-coded SNN architectures to enable efficient continuous control in robotics with neuromorphic hardware.",
+        "Developed population-coded SNN architectures to enable efficient continuous control in robotics with neuromorphic hardware.",
       link: "https://arxiv.org/abs/2510.10516",
       linkLabel: "arxiv",
       tags: ["Prof Advisor: Dr. Todd Gureckis"],
@@ -138,7 +138,7 @@ import bits from "../assets/bits.jpg"
       status: "In Progress",
       venue: "New York University Langone Health",
       summary:
-        "Exploring hierarchical reinforcement learning (ArCHer framework) to train small language models for adaptive, multi-turn therapeutic dialogue and efficient on-device deployment.",
+        "Explored hierarchical reinforcement learning (ArCHer framework) to train small language models for adaptive, multi-turn therapeutic dialogue and efficient on-device deployment.",
       tags: ["Prof. Advisor: Dr. Zhe Chen"]
     },
     {
@@ -170,7 +170,7 @@ import bits from "../assets/bits.jpg"
       venue: "arXiv · Autonomous Driving",
       year: "2026",
       summary:
-        "Explores an ensemble of perception models for autonomous driving, combining detection, segmentation, and tracking pipelines.",
+        "Explored an ensemble of perception models for autonomous driving, combining detection, segmentation, and tracking pipelines.",
       link: "https://arxiv.org/abs/2603.09255",
       linkLabel: "Show publication",
       tags: ["Autonomous Driving", "Deep Learning"],
@@ -849,7 +849,7 @@ import bits from "../assets/bits.jpg"
     {
       title: "Data Science Intern",
       company_name: "KPTAC Technologies",
-      icon: "https://ui-avatars.com/api/?name=KPTAC&background=f3343c&color=ffffff&bold=true&size=256",
+      icon: "https://drive.google.com/thumbnail?id=1A_mhCe4CDa-htvQsVOjTmqE6MxJTbP3q&sz=w1000",
       iconBg: "#f3343c",
       date: "Feb 2023 - Jul 2023",
       link: "",
