@@ -1,11 +1,48 @@
+.carousel-toolbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.6rem;
+    margin-bottom: 0.75rem;
+}
+
+.carousel-btn {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(17, 22, 45, 0.72);
+    color: rgba(230, 240, 255, 0.92);
+    font-size: 1rem;
+    line-height: 1;
+    transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.carousel-btn:hover {
+    transform: translateY(-1px);
+    border-color: rgba(94, 234, 212, 0.45);
+    background: rgba(33, 45, 88, 0.78);
+}
+
 .achievement-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     gap: 1.25rem;
     padding-top: 1.5rem;
+    padding-bottom: 0.25rem;
+}
+
+.achievement-grid::-webkit-scrollbar {
+    display: none;
 }
 
 .achievement-card {
+    flex: 0 0 calc((100% - 3.75rem) / 4);
+    min-height: 182px;
+    scroll-snap-align: start;
     position: relative;
     padding: 1.25rem;
     border-radius: 1.25rem;
@@ -59,9 +96,17 @@
     color: rgba(235, 241, 255, 0.9);
 }
 
+@media (max-width: 1024px) {
+    .achievement-card {
+        flex: 0 0 calc((100% - 1.25rem) / 2);
+    }
+}
+
 @media (max-width: 600px) {
     .achievement-card {
+        flex: 0 0 100%;
         padding: 1rem;
+        min-height: 170px;
     }
 
     .achievement-pill {
