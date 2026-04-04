@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
-import { logo} from "../assets";
 import "./Navbar.scss";
 
 const Navbar = () => {
@@ -28,8 +27,8 @@ const Navbar = () => {
     <nav
       className={`${
         styles.paddingX
-      } w-full flex items-center py-3 fixed top-0 z-20 ${
-        scrolled ? "bg-primary" : "bg-transparent"
+      } w-full flex items-center py-3 fixed top-0 z-20 transition-all duration-300 ${
+        scrolled ? "bg-primary/85 backdrop-blur-md shadow-lg" : "bg-transparent"
       }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
@@ -52,7 +51,14 @@ const Navbar = () => {
               className={`top2 ${"text-secondary"
               } hover:text-white text-[15px] font-medium cursor-pointer`}
             >
-              <a href="https://drive.google.com/file/d/17GPR5797uZpnbZ0Kg-uG--72pnBD2Vmi/view?usp=sharing" target="_blank" rel="noopener noreferrer"> <b> Resume </b></a>
+              <a
+                href="https://drive.google.com/file/d/1IBM3o3bi44LuQyU4M17X_c9IbhgPeftl/view?usp=share_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className='resume-link'
+              >
+                <b> Resume </b>
+              </a>
           </div>
         </div>
       </div>
