@@ -21,13 +21,24 @@ const ProjectCard = ({
   source_code_link,
   source_link,
 }) => {
+  const getCrispDescription = (text, maxLength = 165) => {
+    if (!text) return "";
+    const normalized = text.replace(/\s+/g, " ").trim();
+    const sentences = normalized.match(/[^.!?]+[.!?]?/g) || [normalized];
+    const candidate = sentences.slice(0, 2).join(" ").trim();
+    if (candidate.length <= maxLength) return candidate;
+    return `${normalized.slice(0, maxLength - 3).trimEnd()}...`;
+  };
+
+  const shortDescription = getCrispDescription(description, 165);
+
   return (
-    <motion.div whileInView={{ opacity: 1 , transform : 'none'}} variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div whileInView={{ opacity: 1 , transform : 'none'}} variants={fadeIn("up", "spring", index * 0.12, 0.65)}>
       <Tilt
         options={{
-          max: 45,
+          max: 14,
           scale: 1,
-          speed: 450,
+          speed: 380,
         }}
         className='project-box bg-tertiary p-5 rounded-2xl sm:w-[330px] w-full'
       >
@@ -69,7 +80,7 @@ const ProjectCard = ({
         </div>
 
         <div className='content mt-5'>
-          <p className='mt-2 text-secondary text-[14px]' style={{textAlign:'justify'}}>{description}</p>
+          <p className='mt-2 text-secondary text-[14px]' style={{textAlign:'justify'}}>{shortDescription}</p>
         </div>
 
         <div className='content mt-4 flex flex-wrap gap-2'>
@@ -88,7 +99,7 @@ const ProjectCard = ({
 };
 const Project = () => {
 
-  const [selected, setSelected] = useState("java");
+  const [selected, setSelected] = useState("LLM");
   const [data, setData] = useState([]);
 
   useEffect(() => {
