@@ -13,10 +13,23 @@
   color-scheme: dark;
 }
 
+body {
+  background:
+    radial-gradient(circle at 12% 18%, rgba(34, 211, 238, 0.12), transparent 22%),
+    radial-gradient(circle at 86% 10%, rgba(59, 130, 246, 0.12), transparent 24%),
+    radial-gradient(circle at 52% 62%, rgba(139, 92, 246, 0.08), transparent 30%),
+    #050816;
+}
+
+::selection {
+  background: rgba(56, 189, 248, 0.28);
+  color: #f8fbff;
+}
+
 .hash-span {
-  margin-top: -100px;
-  padding-bottom: 50px;
   display: block;
+  height: 1px;
+  scroll-margin-top: 150px;
 }
 
 .black-gradient {
