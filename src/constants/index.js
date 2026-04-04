@@ -52,6 +52,12 @@ import bits from "../assets/bits.jpg"
 
   const achievements = [
     {
+      title: "🏁 Finalist (Top 6) at Empire Hacks 2026, Cornell University.",
+    },
+    {
+      title: "🚀 Top 5 at Build with AI Hackathon by GDG NYC during NYC Open Data Week 2026.",
+    },
+    {
       title: "🥈 Second Place in Real-Time Data AI Hackathon (LENSES X AWS X Ness), NYC 2025.",
     },
     {
@@ -94,6 +100,17 @@ import bits from "../assets/bits.jpg"
   ]
 
   const research = [
+    {
+      title: "GPUTOK: GPU Accelerated Byte Level BPE Tokenization",
+      status: "arXiv",
+      venue: "arXiv · Mar 2026",
+      year: "2026",
+      summary:
+        "Built a GPU-accelerated byte-level BPE tokenizer that follows GPT-2 merge rules, matches CPU tokenization, and runs about 1.7x faster than tiktoken and 7.6x faster than Hugging Face GPT-2 on the longest WikiText103 inputs.",
+      link: "https://arxiv.org/abs/2603.02597",
+      linkLabel: "Show publication",
+      tags: ["CUDA", "Tokenization", "Prof Advisor: Prof. Zahran"],
+    },
     {
       title: "Align2Act: Instruction-Tuned Models for Human-Aligned Autonomous Driving",
       status: "Graduate Research",
@@ -149,11 +166,13 @@ import bits from "../assets/bits.jpg"
     {
       title:
         "Multi-model Approach for Autonomous Driving: A State-of-the-Art Deep Learning Strategy on Traffic Sign, Vehicle, and Lane Detection",
-      status: "Under Review",
-      venue: "Multimedia Tools and Applications · Springer",
-      year: "2024",
+      status: "arXiv",
+      venue: "arXiv · Autonomous Driving",
+      year: "2026",
       summary:
         "Explores an ensemble of perception models for autonomous driving, combining detection, segmentation, and tracking pipelines.",
+      link: "https://arxiv.org/abs/2603.09255",
+      linkLabel: "Show publication",
       tags: ["Autonomous Driving", "Deep Learning"],
     },
     
@@ -751,92 +770,92 @@ import bits from "../assets/bits.jpg"
   
   const experiences = [
     {
+      title: "AI Engineer Intern",
+      company_name: "Toyota Motors North America",
+      icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Toyota_logo_%28Red%29.svg/960px-Toyota_logo_%28Red%29.svg.png",
+      iconBg: "#ffffff",
+      date: "Feb 2026 - Present",
+      link: "https://www.toyota.com",
+      points: [
+        "Built a DeepAgents pipeline with supervisor, parser, scorer, and publisher subagents to convert 8K+ Toyota knowledge-base chunks across 900+ documents into reusable agentic skills, improving RAG performance and reducing unnecessary LLM calls by 3.5x.",
+      ],
+    },
+    {
       title: "Graduate Student Researcher",
       company_name: "NYU Langone Health",
       icon: "https://pbs.twimg.com/profile_images/1675847757850988544/qDE0W0XQ_400x400.jpg",
       iconBg: "#570f8c",
-      date: "Apr 2025 - Present",
+      date: "Mar 2025 - Present",
       link: "https://nyulangone.org",
       points: [
-        "Fine-tuned SLMs (Phi-3 1B, LLaMA-3 1B, Qwen-1.7B) on mental-health datasets such as MentalChat16K, MHQA, and PsychBench.",
-        "Implementing (ARCHER)hierarchical actor–critic RL to optimize long-horizon interactions, enabling the model to adaptively reason, recall, and personalize multi-turn therapy-like conversations.",
-        "Exploring alignment strategies (ORPO, DPO, RLHF) to balance empathy, safety, and domain relevance within constrained compute limits.",
-        "Evaluating model empathy and therapeutic reasoning using PsyEval, MentaLLaMA, and EQ-Bench frameworks.",
+        "Developed RV-GRPO, a rubric-verifiable reinforcement learning framework for therapeutic dialogue using clinically grounded rewards to replace subjective LLM-judge signals.",
       ],
-      link: "",
     },
     {
-      title: "Founding Engineer",
-      company_name: "LaRa Home",
-      icon: "https://media.licdn.com/dms/image/v2/D4D22AQGvPp1yHZduLQ/feedshare-shrink_800/B4DZdXwMkWGUAk-/0/1749523943164?e=2147483647&v=beta&t=hyasPp_V_-4Jffecec29aKanJ1ohi3ojNPsuE9d5I-U",
-      iconBg: "#232452",
-      date: "Feb 2025 - Present",
-      link: "https://www.larahome.info",
+      title: "Machine Learning Engineer",
+      company_name: "Genmab",
+      icon: "https://download.logo.wine/logo/Genmab/Genmab-Logo.wine.png",
+      iconBg: "#ffffff",
+      date: "Sep 2025 - Dec 2025",
+      link: "https://www.genmab.com",
       points: [
-        "Built an end-to-end fullstack AI application integrating a user friendly frontend, database and FastAPI backend to automate floorplan-to-code compliance checks.",
-        "Interviewed and collaborated with 10+ architects and firms to identify pain points, shape product design, and enhance compliance workflows.",
-        "Developed intelligent rule-checking pipelines reducing manual validation time and improving accuracy for architectural compliance review."
+        "Architected a clinical trials discovery engine using FastAPI, MongoDB with 500k+ records, and Qdrant hybrid search, enabling sub-second responses and 50 to 70% faster trial discovery.",
       ],
-      link: "https://lara-home.streamlit.app",
     },
-
     {
-      title: "Data Science Intern",
+      title: "Machine Learning Engineer Intern",
       company_name: "Open Healthcare US",
       icon: "https://media.licdn.com/dms/image/v2/D4E0BAQHRXPhuM8m0jw/company-logo_200_200/B4EZmXdjPzKgAI-/0/1759182730641/open_healthcare_us_logo?e=2147483647&v=beta&t=5g8g1b3Rhqzw598Gauj6HQOJ8jPNvVQHmpx-RwuKLAM",
       iconBg: "#fcfcfcff",
       date: "May 2025 - Aug 2025",
       link: "https://us.ohc.global/",
       points: [
-        "Delivered a production-ready AI doctor chatbot combining speech-to-text (OpenAI Whisper V3), text-to-speech (ElevenLabs), and real-time avatar streaming (HeyGen SDK). Implemented agentic RAG architecture with FastAPI-React stack to provide intelligent, human-like diagnostic interactions for healthcare applications.",
-        "Developed an end-to-end sales automation platform integrating OpenAI for smart lead analysis, Apollo.io for contact enrichment, and Salesforce for automated pipeline management. Containerized deployment using Docker and FastAPI enabled seamless CRM synchronization and intelligent lead qualification at scale.",
+        "Developed a full-stack conversational lead-generation system integrating OpenAI, Apollo.io, Salesforce, and FastAPI, reducing manual sales operations by 40%.",
       ],
-      link: "https://media.licdn.com/dms/image/v2/D4E0BAQHRXPhuM8m0jw/company-logo_200_200/B4EZmXdjPzKgAI-/0/1759182730641/open_healthcare_us_logo?e=2147483647&v=beta&t=5g8g1b3Rhqzw598Gauj6HQOJ8jPNvVQHmpx-RwuKLAM",
+    },
+    {
+      title: "Founding Engineer",
+      company_name: "LaRa Home (Stealth Mode)",
+      icon: "https://media.licdn.com/dms/image/v2/D4D22AQGvPp1yHZduLQ/feedshare-shrink_800/B4DZdXwMkWGUAk-/0/1749523943164?e=2147483647&v=beta&t=hyasPp_V_-4Jffecec29aKanJ1ohi3ojNPsuE9d5I-U",
+      iconBg: "#232452",
+      date: "Feb 2025 - Dec 2025",
+      link: "",
+      points: [
+        "Built a 0 to 1 AI compliance platform with React, FastAPI, Supabase, and Gemini API for architectural floorplan review, reducing manual compliance review time by 65%.",
+      ],
     },
     {
       title: "Machine Learning Engineer",
-      company_name: "Xneuronz AI",
+      company_name: "Formetry Labs Pvt Ltd",
       icon: "https://media.licdn.com/dms/image/v2/D560BAQGP7fo1r0ky6Q/company-logo_200_200/company-logo_200_200/0/1707857824526/xneuronz_ai_logo?e=2147483647&v=beta&t=ZM_WDVGDQzQL7W41uE_pdPhkSoEex-Ep5ZexaosjSko",
       iconBg: "#000000",
-      date: "Mar 2024 - Sep 2024",
-      link: "https://xneuronz.com",
+      date: "Feb 2024 - Sep 2024",
+      link: "",
       points: [
-        "Built a Floor Plan search model using OpenAI CLIP embeddings and Qdrant vector database.",
-        "Finetuned Stable Diffusion model using QLoRA and LoRA techniques on custom-created Interior Room Design datasets.",
-        "Developed a Multi-Agent System using CrewAI, where AI agents collaboratively strategize room allocation, room placements by following user constraints and design floor layout plans.",
-        "Built a RAG system for the Bangalore Building Bye-Law document using DSPy, LangChain and Unstructured.io.",
+        "Engineered production RAG pipelines with Airflow, PostgreSQL, OpenSearch, Jina embeddings, and LangChain for 9000+ page construction documents, reducing manual lookup time by 60%.",
       ],
-      link: "https://drive.google.com/file/d/1WyNpKNKWugJii8c4uVyMxXodpHUBjgd5/view?usp=sharing",
     },
     {
-      title: "Data Science Intern",
+      title: "Data Scientist",
       company_name: "Dotlas",
       icon: "https://avatars.githubusercontent.com/u/88832003?s=200&v=4",
       iconBg: "#0c152c",
       date: "Sep 2023 - Jan 2024",
       link: "https://www.dotlas.com",
       points: [
-        "Built a data product analyzing sentiments in restaurant reviews, identifying impact factors over a timeperiod.",
-        "Applied Semi Supervised Learning Techniques to predict house prices and restaurant meal prices.",
-        "Designed robust collectors & built Databricks pipelines for data collection, reduced data retrieval time by 20%.",
-        "Utilized SQL queries to extract valuable insights and performed data visualization for better decision-making.",
+        "Built data products for restaurant and housing intelligence using sentiment analysis, semi-supervised learning, SQL, and data visualization workflows.",
       ],
-      link: "https://drive.google.com/file/d/1wdjozqqma558ke-p21yR933jvqKUesYj/view?usp=sharing",
     },
     {
       title: "Data Science Intern",
       company_name: "KPTAC Technologies",
-      icon: "https://drive.google.com/thumbnail?id=1A_mhCe4CDa-htvQsVOjTmqE6MxJTbP3q&sz=w1000",
+      icon: "https://ui-avatars.com/api/?name=KPTAC&background=f3343c&color=ffffff&bold=true&size=256",
       iconBg: "#f3343c",
       date: "Feb 2023 - Jul 2023",
       link: "",
       points: [
-        "Scraped major e-grocery websites in UAE with Scrapy, Beautiful Soup, and hidden APIs, then preprocessed the data.",
-        "Developed automated data extraction pipelines with Scrapy, resulting in a 40% increase in data acquisition efficiency.",
-        "Used Folium and GeoPandas to optimize customer order locations, achieving a 30% reduction in delivery times.",
-        "Conducted data analysis and clustering to identify top-selling products & gain customer segmentation insights.",
+        "Built large-scale web data collection and geospatial analysis pipelines that improved grocery data acquisition and delivery optimization.",
       ],
-      link: "https://drive.google.com/file/d/1O7bpoPvjCfuVurKqWvIp4d7bq2W36qhx/view?usp=sharing",
     },
     // {
     //   title: "Undergraduate Student Researcher",
@@ -860,11 +879,8 @@ import bits from "../assets/bits.jpg"
       date: "Jun 2021 - Sep 2021",
       link: "https://www.sentientlabs.tech",
       points: [
-        "Developed ROS-based Robot App in AWS RoboMaker for obstacle avoidance and path planning.",
-        "Tested app with Turtlebot in simulated AWS environment, using Gazebo, and Rviz, achieving a 95% success rate.",
-        "Containerized app with Docker for enhanced portability and scalability, reducing deployment time by 30%.",
+        "Developed ROS-based robotics applications in AWS RoboMaker for simulated navigation, obstacle avoidance, and path planning.",
       ],
-      link: "https://drive.google.com/file/d/1M_o-iAGm-G8q_u2nNndFyoS7RMbi7e2s/view?usp=sharing",
     },
     // {
     //   title: "Hacktoberfest",
@@ -918,13 +934,13 @@ import bits from "../assets/bits.jpg"
     name: "Kanishkha",
     title: "Machine Learning Engineer",
     description1:
-      "👋 Hi, I'm Kanishkha! I turn research ideas into production-ready ML systems 🚀. Currently at NYU's Center for Data Science, navigating the eternal quest of making models that work as well in production as they do in Jupyter notebooks 📊.",
+      "I am a Machine Learning Engineer focused on building AI systems that move cleanly from research to production.",
     description2:
-      "My journey spans BITS Pilani, startups, and AI research labs where I've shipped multi-agent systems 🤖, conversational AI 💬, and healthcare solutions 🏥. I specialize in building ML that's both technically sound and genuinely useful.",
+      "My experience spans NYU Center for Data Science, Toyota, Genmab, and early-stage startups across applied AI and platform work.",
     description3:
-      "Fluent in Python 🐍, PyTorch, LangChain, Docker 🐳, and the art of debugging at 2 AM ☕. I believe in clean code, reproducible experiments, and infrastructure that doesn't mysteriously break on Fridays. Also, a strong advocate for version control and meaningful variable names.",
+      "I work on multi-agent workflows, LLM applications, and practical ML products in healthcare and enterprise settings.",
     description4:
-      "Beyond code: Trivia champion 🧠 | Hackathon winner 🏆 | Robotics hobbyist 🔧 | Sports enthusiast 🏏⚽🏓. Building something cool in AI/ML? Let's talk, I bring technical expertise, product thinking, and surprisingly good coffee recommendations ☕✨.",
+      "I care about clear problem framing, measurable outcomes, and engineering that stays reliable outside the notebook.",
   };
   
   export { list, profiles, technologies, experiences, educations, achievements, research, about };
