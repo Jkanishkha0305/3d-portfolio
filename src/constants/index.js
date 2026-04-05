@@ -193,15 +193,11 @@ import bits from "../assets/bits.jpg"
   const technologies = [
     {
       name: "Python",
-      icon: "/tech-logos/python.svg",
+      icon: "/tech-logos/python.png",
     },
     {
       name: "PyTorch",
-      icon: "/tech-logos/pytorch.svg",
-    },
-    {
-      name: "TensorFlow",
-      icon: "https://img.icons8.com/?size=100&id=n3QRpDA7KZ7P&format=png&color=000000",
+      icon: "/tech-logos/pytorch.png",
     },
     {
       name: "FastAPI",
@@ -220,10 +216,6 @@ import bits from "../assets/bits.jpg"
       icon: "https://img.icons8.com/color/480/docker.png",
     },
     {
-      name: "Kubernetes",
-      icon: "https://cdn.simpleicons.org/kubernetes/326CE5",
-    },
-    {
       name: "PostgreSQL",
       icon: "https://cdn.simpleicons.org/postgresql/4169E1",
     },
@@ -232,16 +224,12 @@ import bits from "../assets/bits.jpg"
       icon: "https://cdn.simpleicons.org/mongodb/47A248",
     },
     {
-      name: "Neo4j",
-      icon: "https://cdn.simpleicons.org/neo4j/4581C3",
-    },
-    {
       name: "CUDA",
       icon: "https://cdn.simpleicons.org/nvidia/76B900",
     },
     {
       name: "Hugging Face",
-      icon: "/tech-logos/huggingface.svg",
+      icon: "https://img.icons8.com/?size=100&id=sop9ROXku5bb&format=png&color=000000",
     },
     {
       name: "LangChain",
