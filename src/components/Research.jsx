@@ -72,6 +72,16 @@ const Research = () => {
               variants={fadeIn("up", "spring", 0, 0.6)}
               whileHover={{ y: -4 }}
             >
+              {(() => {
+                const tags = item.tags || [];
+                const advisorTags = tags.filter((tag) => /prof advisor/i.test(tag));
+                const otherTags = tags.filter((tag) => !/prof advisor/i.test(tag));
+                const visibleOtherTags = otherTags.slice(0, 2);
+                const hiddenCount = otherTags.length - visibleOtherTags.length;
+                const visibleTags = [...visibleOtherTags, ...advisorTags];
+
+                return (
+                  <>
               <div className='research-card__header'>
                 {item.status && (
                   <span className='research-status'>{item.status}</span>
@@ -89,15 +99,15 @@ const Research = () => {
                 <p className='research-summary'>{getCrispSummary(item.summary, 140)}</p>
               )}
 
-              {item.tags && item.tags.length > 0 && (
+              {visibleTags.length > 0 && (
                 <div className='research-tags'>
-                  {item.tags.slice(0, 2).map((tag) => (
+                  {visibleTags.map((tag) => (
                     <span key={`${item.title}-${tag}`} className='research-tag'>
                       {tag}
                     </span>
                   ))}
-                  {item.tags.length > 2 && (
-                    <span className='research-tag muted'>+{item.tags.length - 2} more</span>
+                  {hiddenCount > 0 && (
+                    <span className='research-tag muted'>+{hiddenCount} more</span>
                   )}
                 </div>
               )}
@@ -126,6 +136,9 @@ const Research = () => {
                   )}
                 </div>
               )}
+                  </>
+                );
+              })()}
             </motion.li>
           ))}
         </motion.ul>
