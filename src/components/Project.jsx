@@ -80,7 +80,7 @@ const ProjectCard = ({
         </div>
 
         <div className='content mt-5'>
-          <p className='mt-2 text-secondary text-[14px]' style={{textAlign:'justify'}}>{shortDescription}</p>
+          <p className='project-desc mt-2 text-secondary text-[14px]' style={{textAlign:'justify'}}>{shortDescription}</p>
         </div>
 
         <div className='content mt-4 flex flex-wrap gap-2'>
@@ -99,18 +99,18 @@ const ProjectCard = ({
 };
 const Project = () => {
 
-  const [selected, setSelected] = useState("LLM");
+  const [selected, setSelected] = useState("HACK");
   const [data, setData] = useState([]);
 
   useEffect(() => {
     switch (selected) {
-      case "LLM":
+      case "HACK":
         setData(llmProject);
         break;
-      case "DL":
+      case "SYS":
         setData(cProject);
         break;
-      case "CV":
+      case "RES":
         setData(webProject);
         break;
       case "other":

@@ -8,7 +8,10 @@ $maincolor: rgb(3, 3, 37);
 
     .project-box
     {
-        min-height: 420px;
+        min-height: 500px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
         position: relative;
         overflow: hidden;
         border: 1px solid rgba(255, 255, 255, 0.08);
@@ -42,6 +45,19 @@ $maincolor: rgb(3, 3, 37);
                 left: 100%;
             }
         }
+    }
+
+    .project-desc {
+        min-height: 6.2em;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .project-box .content.mt-4 {
+        margin-top: auto;
+        padding-top: 0.35rem;
     }
 
     ul
@@ -126,7 +142,8 @@ $maincolor: rgb(3, 3, 37);
 @media (max-width: 640px) {
     .project {
         .project-box {
-            min-height: 390px;
+            min-height: 470px;
+            height: 470px;
         }
     }
 }
