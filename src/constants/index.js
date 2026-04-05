@@ -1,6 +1,6 @@
 import {
     javascript,html,css,reactjs,tailwind,nodejs,mongodb,git,threejs,
-    hf,xneuronz,holopin,
+    xneuronz,holopin,
     // nyu,bits,
   } from "../assets";
 
@@ -53,21 +53,31 @@ import bits from "../assets/bits.jpg"
   const achievements = [
     {
       title: "🏁 Finalist (Top 6) at Empire Hacks 2026, Cornell University.",
+      link: "https://www.linkedin.com/posts/jkanishkha_empirehacks2026-cornelltech-aiagents-ugcPost-7442221055294898176-3p8g?utm_source=share&utm_medium=member_desktop&rcm=ACoAADXHBlUBj6-XUaYiIKHi1XNr9PdWjaOg5e0",
     },
     {
       title: "🚀 Top 5 at Build with AI Hackathon by GDG NYC during NYC Open Data Week 2026.",
+      link: "https://www.linkedin.com/posts/jkanishkha_buildwithai-gdg-nycopendataweek-ugcPost-7445109603098357760-jp6c?utm_source=share&utm_medium=member_desktop&rcm=ACoAADXHBlUBj6-XUaYiIKHi1XNr9PdWjaOg5e0",
     },
     {
       title: "🥈 Second Place in Real-Time Data AI Hackathon (LENSES X AWS X Ness), NYC 2025.",
+      link: "https://www.linkedin.com/posts/jkanishkha_ai-hackathon-streamingdata-ugcPost-7386317287085101056-fmNT?utm_source=share&utm_medium=member_desktop&rcm=ACoAADXHBlUBj6-XUaYiIKHi1XNr9PdWjaOg5e0",
     },
     {
       title: "🥇 First Place in Best use of Linkup, AI Agents Hackathon NYC, 2025.",
+      link: "https://www.linkedin.com/posts/jkanishkha_ai-hackathonnyc-winners-ugcPost-7381192671794606080-F3Z3?utm_source=share&utm_medium=member_desktop&rcm=ACoAADXHBlUBj6-XUaYiIKHi1XNr9PdWjaOg5e0",
     },
     {
       title: "🥇 First Place in HackWallStreet x Deskhead Hackathon, 2024. ",
+      link: "https://www.linkedin.com/posts/jkanishkha_hackstartup-innovation-financialdata-share-7249141490562564097-evXo?utm_source=share&utm_medium=member_desktop&rcm=ACoAADXHBlUBj6-XUaYiIKHi1XNr9PdWjaOg5e0",
     },
     {
       title: "🥉 Third Place in Hatch Labs Hackathon (Team Great Village), 2024 .",
+      link: "https://www.linkedin.com/posts/jkanishkha_hackathon-ai-innovation-ugcPost-7264523027457949696-g3wY?utm_source=share&utm_medium=member_desktop&rcm=ACoAADXHBlUBj6-XUaYiIKHi1XNr9PdWjaOg5e0",
+    },
+    {
+      title: "🥉 Third Place in HackBoston AI Hackathon, 2024.",
+      link: "https://www.linkedin.com/posts/jkanishkha_hackbostonai-ai-thankful-share-7262524825988968448-1qOn?utm_source=share&utm_medium=member_desktop&rcm=ACoAADXHBlUBj6-XUaYiIKHi1XNr9PdWjaOg5e0",
     },
     {
       title: "🥇 Winner of DOTLAS Datathon, 2023.",
@@ -109,7 +119,7 @@ import bits from "../assets/bits.jpg"
         "Built a GPU-accelerated byte-level BPE tokenizer that follows GPT-2 merge rules, matches CPU tokenization, and runs about 1.7x faster than tiktoken and 7.6x faster than Hugging Face GPT-2 on the longest WikiText103 inputs.",
       link: "https://arxiv.org/abs/2603.02597",
       linkLabel: "Show publication",
-      tags: ["CUDA", "Tokenization", "Prof Advisor: Prof. Zahran"],
+      tags: ["CUDA", "Tokenization", "Prof Advisor: Prof. Mohammed Zahran"],
     },
     {
       title: "Align2Act: Instruction-Tuned Models for Human-Aligned Autonomous Driving",
@@ -150,7 +160,7 @@ import bits from "../assets/bits.jpg"
         "Applied transfer learning to accurately classify microscopic metal structures, contributing to automated materials analysis.",
       link: "https://doi.org/10.1007/978-3-031-27034-5",
       linkLabel: "Springer DOI",
-      tags: ["Computer Vision", "Transfer Learning"],
+      tags: ["Computer Vision", "Transfer Learning", "Prof Advisor: Dr. Angel Arul Jothi"],
     },
     {
       title: "An End-to-End Hybrid Learning Model for Detection of Covid-19 from Chest X-ray Images",
@@ -161,7 +171,7 @@ import bits from "../assets/bits.jpg"
         "Designed a hybrid CNN + LSTM architecture to improve Covid-19 diagnosis from chest radiography with rigorous benchmarking.",
       link: "https://doi.org/10.1109/ICAIA57370.2023.10169832",
       linkLabel: "IEEE DOI",
-      tags: ["Medical Imaging", "Hybrid Deep Learning"],
+      tags: ["Medical Imaging", "Hybrid Deep Learning", "Prof Advisor: Dr. Pranav Pawar"],
     },
     {
       title:
@@ -173,7 +183,7 @@ import bits from "../assets/bits.jpg"
         "Explored an ensemble of perception models for autonomous driving, combining detection, segmentation, and tracking pipelines.",
       link: "https://arxiv.org/abs/2603.09255",
       linkLabel: "Show publication",
-      tags: ["Autonomous Driving", "Deep Learning"],
+      tags: ["Autonomous Driving", "Deep Learning", "Prof Advisor: Dr. Pranav Pawar"],
     },
     
     
@@ -183,105 +193,346 @@ import bits from "../assets/bits.jpg"
   const technologies = [
     {
       name: "Python",
-      icon: "https://img.icons8.com/?size=100&id=l75OEUJkPAk4&format=png&color=000000",
+      icon: "/tech-logos/python.svg",
     },
     {
       name: "PyTorch",
-      icon: "https://img.icons8.com/?size=100&id=jH4BpkMnRrU5&format=png&color=000000",
+      icon: "/tech-logos/pytorch.svg",
     },
     {
-      name: "Tensorflow",
+      name: "TensorFlow",
       icon: "https://img.icons8.com/?size=100&id=n3QRpDA7KZ7P&format=png&color=000000",
     },
     {
-      name:"C++ tool",
-      icon: "https://img.icons8.com/color/480/000000/c-plus-plus-logo.png",
+      name: "FastAPI",
+      icon: "https://cdn.simpleicons.org/fastapi/009688",
     },
-    {
-      name:"R",
-      icon: "https://img.icons8.com/?size=100&id=CLvQeiwFpit4&format=png&color=000000",
-    },
-    // {
-    //   name: "scikit-learn",
-    //   icon: "https://img.icons8.com/color/480/000000/scikit-learn.png",
-    // },
-    // {
-    //   name: "Pandas",
-    //   icon: "https://img.icons8.com/color/480/pandas.png",
-    // },
     {
       name:"AWS",
       icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
     },
-    // {
-    //   name: "MLflow",
-    //   icon: "https://mlflow.org/docs/latest/_static/MLflow-logo-final-black.png",
-    // },
+    {
+      name: "Google Cloud",
+      icon: "https://cdn.simpleicons.org/googlecloud/4285F4",
+    },
     {
       name: "Docker",
       icon: "https://img.icons8.com/color/480/docker.png",
     },
     {
-      name: "OpenCV",
-      icon: "https://img.icons8.com/?size=100&id=bpip0gGiBLT1&format=png&color=000000",
+      name: "Kubernetes",
+      icon: "https://cdn.simpleicons.org/kubernetes/326CE5",
+    },
+    {
+      name: "PostgreSQL",
+      icon: "https://cdn.simpleicons.org/postgresql/4169E1",
+    },
+    {
+      name: "MongoDB",
+      icon: "https://cdn.simpleicons.org/mongodb/47A248",
+    },
+    {
+      name: "Neo4j",
+      icon: "https://cdn.simpleicons.org/neo4j/4581C3",
+    },
+    {
+      name: "CUDA",
+      icon: "https://cdn.simpleicons.org/nvidia/76B900",
     },
     {
       name: "Hugging Face",
-      icon: "https://img.icons8.com/?size=100&id=sop9ROXku5bb&format=png&color=000000",
+      icon: "/tech-logos/huggingface.svg",
     },
     {
-      name: "LlamaIndex",
-      icon: "https://asset.brandfetch.io/id6a4s3gXI/idncpUsO_z.jpeg",
-    },
-    {
-      name: "Langchain",
+      name: "LangChain",
       icon: "https://lancedb.github.io/lancedb/assets/langchain.png",
     },
-    // {
-    //   name: "DSPy",
-    //   icon: "https://dspy-docs.vercel.app/img/logo.png",
-    // },
     {
-      name: "git",
-      icon: git,
+      name: "Qdrant",
+      icon: "https://cdn.simpleicons.org/qdrant/DC244C",
     },
     {
-      name:"MySql",
-      icon: "https://img.icons8.com/color/480/000000/mysql-logo.png",
+      name: "Next.js",
+      icon: "https://cdn.simpleicons.org/nextdotjs/000000",
+    },
+    {
+      name: "Git",
+      icon: git,
     },
   ];
 
   const list = [
     {
-      id: "LLM",
-      title: "Large Language Models",
+      id: "HACK",
+      title: "Hackathons",
     },
     {
-      id: "DL",
-      title: "Deep Learning",
+      id: "SYS",
+      title: "AI Systems",
     },
     {
-      id: "CV",
-      title: "Computer Vision",
-    },
-    {
-      id: "other",
-      title: "Other",
+      id: "RES",
+      title: "Research",
     },
   ];
 
   export const llmProject = [
     {
-      name: "MediBot-GraphRAG",
+      name: "CityNerve",
       description:
-        "GraphRag based chatbot built using LangChain and Neo4j, designed for hospital systems. The chatbot retrieves structured and unstructured data about patients, visits, physicians, insurance payers, and hospital locations.",
+        "Built a multimodal civic-response platform that triages city incidents from photos and voice, then routes dispatch decisions with a live command center.",
+      tags: [
+        {
+          name: "Gemini 2.0",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "GCP Cloud Run",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Firestore",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: "https://raw.githubusercontent.com/Jkanishkha0305/citynerve/main/assets/command-center.png",
+      source_link: "https://smart311-frontend-446616000971.us-east1.run.app/dashboard",
+      source_code_link: "https://github.com/Jkanishkha0305/citynerve",
+    },
+    {
+      name: "Parallax",
+      description:
+        "Built an agentic UX-audit system that converts messy user complaints into multi-persona website analysis and auto-files actionable GitHub issues.",
+      tags: [
+        {
+          name: "Claude Agents",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Playwright",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Next.js",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: "https://raw.githubusercontent.com/Jkanishkha0305/parallax/main/assets/gen_cover.png",
+      source_link: "https://parallax-ten-rho.vercel.app",
+      source_code_link: "https://github.com/Jkanishkha0305/parallax",
+    },
+    {
+      name: "GhostOps",
+      description:
+        "Built a transparent desktop AI overlay that sees the screen, executes computer-use tasks, and records/replays workflows using multi-agent routing.",
+      tags: [
+        {
+          name: "DigitalOcean Gradient",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Electron",
+          color: "green-text-gradient",
+        },
+        {
+          name: "FastAPI",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: "https://raw.githubusercontent.com/Jkanishkha0305/ghostops/main/assets/GhostOps.png",
+      source_link: "https://clownfish-app-dqd9h.ondigitalocean.app/health",
+      source_code_link: "https://github.com/Jkanishkha0305/ghostops",
+    },
+    {
+      name: "FlagSplainer",
+      description:
+        "Built a real-time fraud intelligence pipeline with Kafka and LangChain agents that flags suspicious transactions and explains each alert in plain language.",
+      tags: [
+        {
+          name: "Kafka",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "LangChain",
+          color: "green-text-gradient",
+        },
+        {
+          name: "AWS + Lenses",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: "/project-covers/flagsplainer.png",
+      source_link: "https://github.com/Jkanishkha0305/FlagSplainer",
+      source_code_link: "https://github.com/Jkanishkha0305/FlagSplainer",
+    },
+    {
+      name: "BillFighter",
+      description:
+        "Built a healthcare billing copilot that extracts line items from hospital bills, benchmarks CPT costs to CMS rates, and drafts dispute-ready letters.",
+      tags: [
+        {
+          name: "Vertex AI",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Google ADK",
+          color: "green-text-gradient",
+        },
+        {
+          name: "FastAPI + Next.js",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: "https://raw.githubusercontent.com/Jkanishkha0305/billfighter/main/assets/01-homepage.png",
+      source_link: "https://github.com/Jkanishkha0305/billfighter",
+      source_code_link: "https://github.com/Jkanishkha0305/billfighter",
+    },
+    {
+      name: "StockPulse",
+      description:
+        "Built an AI-driven retail inventory system that combines demand signals and vendor negotiation to prevent stockouts and optimize purchase orders.",
+      tags: [
+        {
+          name: "Airia Agent",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Supabase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Lightdash",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: "/project-covers/stockpulse2.png",
+      source_link: "https://github.com/Jkanishkha0305/StockPulse",
+      source_code_link: "https://github.com/Jkanishkha0305/StockPulse",
+    },
+  ];
+  
+  export const cProject = [
+    {
+      name: "MCP PR Reviewer",
+      description:
+        "Built an MCP-native automation stack that turns GitHub PR events into cross-system review summaries posted into Slack with enterprise tool orchestration.",
+      tags: [
+        {
+          name: "MCP",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Gemini",
+          color: "green-text-gradient",
+        },
+        {
+          name: "GitHub + Slack",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: "/project-covers/mcp.png",
+      source_link: "https://github.com/Jkanishkha0305/mcp-pr-reviewer",
+      source_code_link: "https://github.com/Jkanishkha0305/mcp-pr-reviewer",
+    },
+    {
+      name: "Argus",
+      description:
+        "Built a multimodal video understanding system that combines transcript, vision, and retrieval signals to answer grounded questions over long-form video.",
+      tags: [
+        {
+          name: "FastMCP",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Pixeltable",
+          color: "green-text-gradient",
+        },
+        {
+          name: "FastAPI + React",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: "/project-covers/argus.png",
+      source_link: "https://github.com/Jkanishkha0305/Argus",
+      source_code_link: "https://github.com/Jkanishkha0305/Argus",
+    },
+    {
+      name: "PulseStream",
+      description:
+        "Built a real-time ICU monitoring pipeline with tiered anomaly detection to surface clinical risk from streaming vitals with low-latency alerts.",
+      tags: [
+        {
+          name: "FastAPI",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Numba",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Next.js + Supabase",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: "/project-covers/pulsestream1.jpg",
+      source_link: "https://github.com/Jkanishkha0305/PulseStream",
+      source_code_link: "https://github.com/Jkanishkha0305/PulseStream",
+    },
+    {
+      name: "ArcFlux",
+      description:
+        "Built an AI payment automation system that interprets natural language commands to schedule and execute USDC payments with risk checks.",
+      tags: [
+        {
+          name: "FastAPI",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "OpenAI Agents",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Circle API",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: "/project-covers/arcflux.png",
+      source_link: "https://github.com/Jkanishkha0305/ArcFlux",
+      source_code_link: "https://github.com/Jkanishkha0305/ArcFlux",
+    },
+    {
+      name: "ClinicalChat Backend",
+      description:
+        "Built the backend service layer for clinical conversational workflows, handling APIs, orchestration, and production-ready healthcare data operations.",
+      tags: [
+        {
+          name: "FastAPI",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "PostgreSQL",
+          color: "green-text-gradient",
+        },
+        {
+          name: "REST APIs",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: "/project-covers/axentra_landing.png",
+      source_link: "https://github.com/Jkanishkha0305/clinicalchatbackend",
+      source_code_link: "https://github.com/Jkanishkha0305/clinicalchatbackend",
+    },
+    {
+      name: "MediBot GraphRAG",
+      description:
+        "Built a graph-RAG medical assistant over hospital entities and visit data using Neo4j and LangChain for structured clinical retrieval.",
       tags: [
         {
           name: "Neo4j",
           color: "blue-text-gradient",
         },
         {
-          name: "Langchain",
+          name: "LangChain",
           color: "green-text-gradient",
         },
         {
@@ -289,110 +540,24 @@ import bits from "../assets/bits.jpg"
           color: "pink-text-gradient",
         },
       ],
-      image: "https://realpython.com/cdn-cgi/image/width=1920,format=auto/https://files.realpython.com/media/Build-a-LLM-Application-with-LangChain_Watermarked.b9d023202ad2.jpg",
+      image: "/project-covers/medibot.png",
       source_link: "https://github.com/Jkanishkha0305/Medibot-GraphRAG",
       source_code_link: "https://github.com/Jkanishkha0305/Medibot-GraphRAG",
     },
+  ];
+
+  export const webProject = [
     {
-      name: "IKEA Assembly Assistant",
+      name: "ReFine-Lab",
       description:
-        "Developed a multimodal system that utilizes OpenAI GPT-4o, Gemini, and CLIP to analyze 10+ IKEA assembly manuals, extracting information from text and images. Used LlamaParse, and Cohere Reranker for precise retrieval of assembly instructions.",
+        "Developed a rubric-verifiable GRPO framework to behaviorally align small mental-health language models using clinically grounded rewards.",
       tags: [
         {
-          name: "OpenAI API",
+          name: "GRPO",
           color: "blue-text-gradient",
         },
         {
-          name: "LLamaParse",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Cohere API",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: "https://realpython.com/cdn-cgi/image/width=1920,format=auto/https://files.realpython.com/media/ChatGPT-A-Great-Coding-Mentor-for-Learning-Python_Watermarked.3161825ae6b8.jpg",
-      source_link: "https://github.com/Jkanishkha0305/End-to-End-LLM-Projects/tree/main/IKEA_Assembly_RAG",
-      source_code_link: "https://github.com/Jkanishkha0305/End-to-End-LLM-Projects/tree/main/IKEA_Assembly_RAG",
-    },
-    {
-      name: "Clinic AI Assistant",
-      description:
-        "Built a Private AI Assistant for clinics and hospitals which fetches patient data and answers questions on top of that data, using Qdrant Hybrid Cloud (JWT-RBAC), DSPy and Groq — Llama3",
-      tags: [
-        {
-          name: "Qdrant Hybrid Cloud",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Groq — Llama3",
-          color: "green-text-gradient",
-        },
-        {
-          name: "DSPy",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: "https://realpython.com/cdn-cgi/image/width=1920,format=auto/https://files.realpython.com/media/Linear-Regression-in-Python_Watermarked.479f82188ace.jpg",
-      source_link: "https://github.com/Jkanishkha0305/End-to-End-LLM-Projects/tree/main/Groq_Clininc_Assitant",
-      source_code_link: "https://github.com/Jkanishkha0305/End-to-End-LLM-Projects/tree/main/Groq_Clininc_Assitant",
-    },
-    
-    {
-      name: "LangQuery",
-      description:
-        "Built an end-to-end LLM project using Google PaLM and Langchain that enables natural language interaction with a MySQL database. Users can ask questions, and the system generates SQL queries to fetch data from the store’s inventory, sales, and discounts database.",
-      tags: [
-        {
-          name: "GooglePaLM",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Langchain",
-          color: "green-text-gradient",
-        },
-        {
-          name: "ChromaDB",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: "https://realpython.com/cdn-cgi/image/width=1920,format=auto/https://files.realpython.com/media/Embeddings-and-Vector-Databases-with-ChromaDB_Watermarked.646a2e85613a.jpg",
-      source_link: "https://github.com/Jkanishkha0305/End-to-End-LLM-Projects/tree/main/PaLM_sqldb_tshirts",
-      source_code_link: "https://github.com/Jkanishkha0305/End-to-End-LLM-Projects/tree/main/PaLM_sqldb_tshirts",
-    },
-    {
-      name: "Multi Agent Financial Analysis",
-      description:
-        "Implemented a multi-agent system using CrewAI where agents like Financial News Analyst, Data Analyst, and Trading Strategy Agent collaborate on tasks. Each agent has defined roles, tools, and tasks with expected outputs.",
-      tags: [
-        {
-          name: "SERPER API",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Langchain",
-          color: "green-text-gradient",
-        },
-        {
-          name: "CrewAI",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: "https://realpython.com/cdn-cgi/image/width=1920,format=auto/https://files.realpython.com/media/How-to-Plot-With-Pandas_Watermarked.5bb0299e061b.jpg",
-      source_link: "https://github.com/Jkanishkha0305/AI-Agents/blob/main/CrewAI_Multi_Agent_Collaboration.ipynb",
-      source_code_link: "https://github.com/Jkanishkha0305/AI-Agents/blob/main/CrewAI_Multi_Agent_Collaboration.ipynb",
-    },
-    {
-      name: "Ecommmerce Chatbot",
-      description:
-        "Fine-tuned Microsoft PHI3 using Unsloth Framework and Parameter-Efficient Fine-Tuning (PEFT) techniques to enhance its performance in E-Commerce chatbot applications, optimizing for improved contextual understanding and response generation.",
-      tags: [
-        {
-          name: "Microsoft PHI3",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Unsloth",
+          name: "TRL",
           color: "green-text-gradient",
         },
         {
@@ -400,373 +565,123 @@ import bits from "../assets/bits.jpg"
           color: "pink-text-gradient",
         },
       ],
-      image: "https://realpython.com/cdn-cgi/image/width=1920,format=auto/https://files.realpython.com/media/How-to-Use-SpaCy-for-Natural-Language-Processing-in-Python_Watermarked_1.b363fc084a80.jpg",
-      source_link: "https://github.com/Jkanishkha0305/End-to-End-LLM-Projects/blob/main/PHI3_Finetuning_Unsloth/README.md",
-      source_code_link: "https://github.com/Jkanishkha0305/End-to-End-LLM-Projects/blob/main/PHI3_Finetuning_Unsloth/README.md",
-    },
-  ];
-  
-  export const cProject = [
-    {
-      name: "MediGenX",
-      description:
-        "Developed a CNN-based system for pneumonia detection from chest X-rays and a generative AI algorithm for personalized medical prescriptions. Fine-tuned a GPT-2 model to enhance prescription accuracy.",
-      tags: [
-        {
-          name: "GAN",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Tensorflow",
-          color: "green-text-gradient",
-        },
-        {
-          name: "GPT-2",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: "https://realpython.com/cdn-cgi/image/width=1920,format=auto/https://files.realpython.com/media/An-Introduction-to-Generative-Adversarial-Networks-GANs_Watermarked.6b71bfd66fda.jpg",
-      source_link: "https://github.com/Jkanishkha0305/MediGenX",
-      source_code_link: "https://github.com/Jkanishkha0305/MediGenX",
+      image: "/project-covers/refinelab.png",
+      source_link: "https://github.com/Jkanishkha0305/ReFine-Lab",
+      source_code_link: "https://github.com/Jkanishkha0305/ReFine-Lab",
     },
     {
-      name: "COVID-19 Detection",
+      name: "Align2Act",
       description:
-        "Developed an end-to-end hybrid model combining CNN+LSTM layers to detect COVID-19 from chest X-rays. Conducted a comparative study with transfer learning models (Xception, MobileNet, VGG19). Built and deployed a web-app using Flask, hosted on Heroku.",
+        "Built instruction-tuned planning for autonomous driving that maps scene understanding to human-aligned driving trajectories in simulation.",
       tags: [
         {
           name: "PyTorch",
           color: "blue-text-gradient",
         },
         {
-          name: "Flask",
+          name: "LLaMA2",
           color: "green-text-gradient",
         },
         {
-          name: "Heroku",
+          name: "nuPlan",
           color: "pink-text-gradient",
         },
       ],
-      image: "https://realpython.com/cdn-cgi/image/width=1920,format=auto/https://files.realpython.com/media/K-Means-Clustering-in-Python_Watermarked.70101a29a2a2.jpg",
-      source_link: "https://github.com/Jkanishkha0305/An-End-to-End-Hybrid-Learning-Model-for-Detection-of-Covid-19-from-CHest-Xray-Images",
-      source_code_link: "https://github.com/Jkanishkha0305/An-End-to-End-Hybrid-Learning-Model-for-Detection-of-Covid-19-from-CHest-Xray-Images",
+      image: "https://raw.githubusercontent.com/Jkanishkha0305/Align2Act/main/assets/viz.gif",
+      source_link: "https://github.com/Jkanishkha0305/Align2Act",
+      source_code_link: "https://github.com/Jkanishkha0305/Align2Act",
     },
     {
-      name: "FinSentinAl",
+      name: "GPUTOK",
       description:
-        "Scraped financial articles, applied sentiment analysis, text summarization, analyzed stock correlations, and developed a forecasting model to correlate sentiments with stocks, using Plotly for visualization.",
+        "Built a GPU byte-level BPE tokenizer matching GPT-2 merge behavior and accelerating long-context tokenization against CPU baselines.",
       tags: [
         {
-          name: "Beautiful Soup",
+          name: "CUDA",
           color: "blue-text-gradient",
         },
         {
-          name: "HuggingFace",
+          name: "BlockBPE",
           color: "green-text-gradient",
         },
         {
-          name: "yfinance API",
+          name: "Tokenization",
           color: "pink-text-gradient",
         },
       ],
-      image: "https://realpython.com/cdn-cgi/image/width=1920,format=auto/https://files.realpython.com/media/How-to-use-NLTK-for-Sentiment-Analysis-in-Python_Watermarked.05ff07ca7ec7.jpg",
-      source_link: "https://github.com/Jkanishkha0305/FinSentinAl",
-      source_code_link: "https://github.com/Jkanishkha0305/FinSentinAl",
+      image: "/project-covers/gputok.png",
+      source_link: "https://arxiv.org/abs/2603.02597",
+      source_code_link: "https://github.com/Jkanishkha0305/gpu-tokenizer",
     },
     {
-      name: "QuakeAI-Fusion",
+      name: "Theramind",
       description:
-        "Analyzed seismic parameters, applied time series techniques, developed forecasting models, used clustering and anomaly detection, and generated synthetic seismic data using VAE.",
+        "Built a privacy-first on-device mental wellness companion with local LLM inference, persistent chat memory, and polished mobile UX.",
       tags: [
         {
-          name: "Time Series",
+          name: "React Native",
           color: "blue-text-gradient",
         },
         {
-          name: "Anamoly Detection",
+          name: "llama.cpp",
           color: "green-text-gradient",
         },
         {
-          name: "VAE",
+          name: "GGUF",
           color: "pink-text-gradient",
         },
       ],
-      image: "https://realpython.com/cdn-cgi/image/width=1920,format=auto/https://files.realpython.com/media/Showcase-Folium_Watermarked.e23256df3c8d.jpg",
-      source_link: "https://github.com/Jkanishkha0305/QuakeAi-Fusion",
-      source_code_link: "https://github.com/Jkanishkha0305/QuakeAi-Fusion",
+      image: "/project-covers/theramind.png",
+      source_link: "https://www.dropbox.com/scl/fi/wylnfdej17svr0hjzjcdp/Theramind_v1.MP4?rlkey=35grs9eyzro4p7jzc1u4qw72a&st=y392fmwq&dl=0",
+      source_code_link: "https://github.com/Jkanishkha0305/Theramind",
     },
     {
-      name: "Malaria Detection",
+      name: "LLM Serving at Scale",
       description:
-        "Developed a malaria detection system using PyTorch and MobileNet for image classification. Built a web application with Flask and deployed it on Heroku for real-time detection.",
+        "Built a production-focused LLM serving stack with vLLM, Kubernetes autoscaling, and quantization to improve throughput and memory efficiency.",
       tags: [
         {
-          name: "PyTorch",
+          name: "vLLM",
           color: "blue-text-gradient",
         },
         {
-          name: "Flask",
+          name: "Kubernetes",
           color: "green-text-gradient",
         },
         {
-          name: "Heroku",
+          name: "W4A16",
           color: "pink-text-gradient",
         },
       ],
-      image: "https://realpython.com/cdn-cgi/image/width=1920,format=auto/https://files.realpython.com/media/UPDATE-Flask-by-Example-Project-Setup_Watermarked.f2d1b7a7a3d2.jpg",
-      source_link: "https://github.com/Jkanishkha0305/Malaria-Detection-End-to-End",
-      source_code_link: "https://github.com/Jkanishkha0305/Malaria-Detection-End-to-End",
+      image: "/project-covers/llmserving.png",
+      source_link: "https://github.com/Jkanishkha0305/llm-serving-at-scale",
+      source_code_link: "https://github.com/Jkanishkha0305/llm-serving-at-scale",
+    },
+    {
+      name: "FactRL",
+      description:
+        "Built an RL-based fact-checking agent pipeline that trains tool-use behavior with GRPO to improve evidence-grounded claim verification.",
+      tags: [
+        {
+          name: "GRPO",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "QLoRA",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Mistral",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: "/project-covers/factrl.png",
+      source_link: "https://github.com/Jkanishkha0305/FactRL",
+      source_code_link: "https://github.com/Jkanishkha0305/FactRL",
     },
   ];
-  
-  export const webProject = [
-    {
-      name: "AutoDrive-Vision",
-      description:
-        "Developed deep learning and computer vision models for traffic signal classification, obstacle detection, and lane detection. Built an autonomous vehicle using Jetson Nano for lane detection, obstacle avoidance, and traffic signal response.",
-      tags: [
-        {
-          name: "YOLO",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Mask-RCNN",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Jetson Nano",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: "https://realpython.com/cdn-cgi/image/width=1920,format=auto/https://files.realpython.com/media/A-Guide-to-Redis--Python_Watermarked.fadbf320f71f.jpg",
-      source_link: "https://github.com/Jkanishkha0305/AutoDrive-Vision",
-      source_code_link: "https://github.com/Jkanishkha0305/AutoDrive-Vision",
-    },
-    {
-      name: "Automatic Attendance System",
-      description:
-        "Built an automatic attendance system using OpenCV, Python, and a face encoder with a cascade classifier for real-time face detection and recognition. The system records attendance, marking entry and exit times, and stores the data in CSV files.",
-      tags: [
-        {
-          name: "OpenCV",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Python",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Face Encoder",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: "https://realpython.com/cdn-cgi/image/width=1920,format=auto/https://files.realpython.com/media/Face-Recognition-with-Python_Watermarked.b2d3b4911af3.jpg",
-      source_link: "https://github.com/Jkanishkha0305/Attendance-system-using-OpenCv-and-Face-Recognition/tree/main",
-      source_code_link: "https://github.com/Jkanishkha0305/Attendance-system-using-OpenCv-and-Face-Recognition/tree/main",
-    },
-    {
-      name: "ASL Translater",
-      description:
-        "Built an ASL detection system using a custom CNN model, OpenCV and TensorFlow. Utilized the Kaggle ASL dataset and applied image masking techniques, and enhanced image quality with CLAHE normalization for improved detection accuracy.",
-      tags: [
-        {
-          name: "OpenCV",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Tensorflow",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Python",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: "https://realpython.com/cdn-cgi/image/width=1920,format=auto/https://files.realpython.com/media/Bitwise-Operators-in-Python_Watermarked.85ff8fc6a931.jpg",
-      source_link: "https://github.com/Jkanishkha0305/ASL-Detection-system-using-Custom-CNN-and-ML-Techniques",
-      source_code_link: "https://github.com/Jkanishkha0305/ASL-Detection-system-using-Custom-CNN-and-ML-Techniques",
-    },
-    {
-      name: "SkyBot",
-      description:
-        "Developed deep learning and computer vision model for mobile robot detection, compared Custom DCNN with YOLOv5 and YOLOv7, and deployed the best model on a DJI Tello drone. Used PID controller and OpenCV for tracking and following the robot.",
-      tags: [
-        {
-          name: "dji Tello",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "PID",
-          color: "green-text-gradient",
-        },
-        {
-          name: "PyTorch",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: "https://realpython.com/cdn-cgi/image/width=1920,format=auto/https://files.realpython.com/media/Image-Processing-in-Python-With-Pillow_Watermarked.b86d7e55f981.jpg",
-      source_link: "https://github.com/Jkanishkha0305/Visual-Tracking-of-Mobile-Robots-using-UAV",
-      source_code_link: "https://github.com/Jkanishkha0305/Visual-Tracking-of-Mobile-Robots-using-UAV",
-    },
-  ];
-  
-  export const otherProject = [
-    {
-      name: "Student Performance Analysis",
-      description:
-        "Built an end-to-end ML model for student mark prediction with CI/CD pipelines using GitHub Actions and AWS CodeRunner. Deployed a Flask app on AWS Elastic Beanstalk, handling data ingestion, transformation, model training, and deployment.",
-      tags: [
-        {
-          name: "CI/CD",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "AWS Coderunner",
-          color: "green-text-gradient",
-        },
-        {
-          name: "CatBoost",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: "https://realpython.com/cdn-cgi/image/width=1920,format=auto/https://files.realpython.com/media/What-is-Data-Engineering_Watermarked.607e761a3c0e.jpg",
-      source_link: "https://github.com/Jkanishkha0305/ML-with-pipelining-for-deployment-SPA",
-      source_code_link: "https://github.com/Jkanishkha0305/ML-with-pipelining-for-deployment-SPA",
-    },
-    {
-      name: "Docker ML APP",
-      description:
-        "Developed an end-to-end bank note authenticity detection system using Docker and machine learning. The project includes data preprocessing, model training, and deployment within a Dockerized environment.",
-      tags: [
-        {
-          name: "Docker",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Machine Learning",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Flasgger_api",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: "https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/Python-Docker-Tutorials_Watermarked.f9834dc9df9a.jpg",
-      source_link: "https://github.com/shinchancode/Mini-Project-SQL-LibraryManagement",
-      source_code_link: "https://github.com/shinchancode/Mini-Project-SQL-LibraryManagement",
-    },
-    {
-      name: "Coding Problems",
-      description:
-        "Solutions of various coding problems from platforms like DeepML, LeetCode, Codeforces, HackerRank, and GeeksforGeeks. The repository includes solutions in Python, SQL and C++.",
-      tags: [
-        {
-          name: "SQL",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Python",
-          color: "green-text-gradient",
-        },
-        {
-          name: "C++",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: "https://realpython.com/cdn-cgi/image/width=1920,format=auto/https://files.realpython.com/media/VSCode--Python-for-Advanced-Users_Watermarked.8fc072163645.jpg",
-      source_link: "https://github.com/Jkanishkha0305/Coding-Problems",
-      source_code_link: "https://github.com/Jkanishkha0305/Coding-Problems",
-    },
-    {
-      name: "Bioinformatics - Drug Discovery",
-      description:
-        "Used ChEMBL web service to retrieve bioactivity data for SARS coronavirus 3C proteinase. Performed EDA, calculated Lipinski and PaDEL, and trained models using random forest and other ML algorithms for bioactivity prediction.",
-      tags: [
-        {
-          name: "machine learning",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "ChEMBL",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Streamlit",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: "https://realpython.com/cdn-cgi/image/width=1920,format=auto/https://files.realpython.com/media/Linear-Regression-in-Python_Watermarked.479f82188ace.jpg",
-      source_link: "https://github.com/Jkanishkha0305/Bio-informatics-project",
-      source_code_link: "https://github.com/Jkanishkha0305/Bio-informatics-project",
-    },
-    {
-      name: "Transformers from Scratch",
-      description:
-        "A Github Repo developed to build different Transformer architecture like - (GPT, Diffusion, CLIP, CLAP, BLIP) from scratch using PyTorch, Python, and HuggingFace. The project includes building the encoder, decoder, attention mechanism, and positional encoding.",
-      tags: [
-        {
-          name: "PyTorch",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Python",
-          color: "green-text-gradient",
-        },
-        {
-          name: "HuggingFace",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: "https://realpython.com/cdn-cgi/image/width=1920,format=auto/https://files.realpython.com/media/Pytorch-vs-Tensorflow_Watermarked.9975d1999917.jpg",
-      source_link: "https://github.com/Jkanishkha0305/Transformers-from-Scratch",
-      source_code_link: "https://github.com/Jkanishkha0305/Transformers-from-Scratch",
-    },
-    {
-      name: "Gallery AI",
-      description:
-        "Created an Intelligent Image Gallery with Upload feature, Deduplication, and Text-Based image Search Using Vector DB Qdrant, OpenAI CLIP embeddings and Sentence Transformers.",
-      tags: [
-        {
-          name: "clip-ViT-B-32",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Qdrant",
-          color: "green-text-gradient",
-        },
-        {
-          name: "HuggingFace",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: "https://realpython.com/cdn-cgi/image/width=1920,format=auto/https://files.realpython.com/media/Generate-Images-with-DALL-E-2-and-OpenAIs-API_Watermarked.05753350e866.jpg",
-      source_link: "https://github.com/Jkanishkha0305/End-to-End-LLM-Projects/tree/main/CLIP_AI_Gallery",
-      source_code_link: "https://github.com/Jkanishkha0305/End-to-End-LLM-Projects/tree/main/CLIP_AI_Gallery",
-    },
-    {
-      name: "MarketAI",
-      description:
-        "Built a user-friendly news research tool designed for effortless information retrieval. Users can input article URLs and ask questions to receive relevant insights from the stock market and financial domain.",
-      tags: [
-        {
-          name: "Open AI API",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Langchain",
-          color: "green-text-gradient",
-        },
-        {
-          name: "FAISS",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: "https://realpython.com/cdn-cgi/image/width=1920,format=auto/https://files.realpython.com/media/Monthly-Python-News_Purple_Watermarked.5b2e306328cb.jpg",
-      source_link: "https://github.com/Jkanishkha0305/End-to-End-LLM-Projects/tree/main/PaLM_news_research_tool",
-      source_code_link: "https://github.com/Jkanishkha0305/End-to-End-LLM-Projects/tree/main/PaLM_news_research_tool",
-    },
-    
-  ];
+
+  export const otherProject = [];
   
   const experiences = [
     {
