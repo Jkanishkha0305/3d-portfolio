@@ -59,10 +59,17 @@ const Achievement = () => {
               variants={fadeIn("up", "spring", index * 0.1, 0.6)}
               whileHover={{ y: -4 }}
             >
-              <span className='achievement-pill'>
-                {String(index + 1).padStart(2, "0")}
-              </span>
               <p className='achievement-text'>{achievement.title}</p>
+              {achievement.link && (
+                <a
+                  href={achievement.link}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='achievement-link blue-text-gradient'
+                >
+                  View
+                </a>
+              )}
             </motion.li>
           ))}
         </motion.ul>
