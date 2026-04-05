@@ -1,5 +1,5 @@
 import {
-    javascript,html,css,reactjs,tailwind,nodejs,mongodb,git,threejs,
+    javascript,html,css,reactjs,tailwind,nodejs,mongodb,threejs,
     xneuronz,holopin,
     // nyu,bits,
   } from "../assets";
@@ -208,10 +208,6 @@ import bits from "../assets/bits.jpg"
       icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
     },
     {
-      name: "Google Cloud",
-      icon: "https://cdn.simpleicons.org/googlecloud/4285F4",
-    },
-    {
       name: "Docker",
       icon: "https://img.icons8.com/color/480/docker.png",
     },
@@ -224,16 +220,8 @@ import bits from "../assets/bits.jpg"
       icon: "https://cdn.simpleicons.org/mongodb/47A248",
     },
     {
-      name: "CUDA",
-      icon: "https://cdn.simpleicons.org/nvidia/76B900",
-    },
-    {
       name: "Hugging Face",
       icon: "https://img.icons8.com/?size=100&id=sop9ROXku5bb&format=png&color=000000",
-    },
-    {
-      name: "LangChain",
-      icon: "https://lancedb.github.io/lancedb/assets/langchain.png",
     },
     {
       name: "Qdrant",
@@ -242,10 +230,6 @@ import bits from "../assets/bits.jpg"
     {
       name: "Next.js",
       icon: "https://cdn.simpleicons.org/nextdotjs/000000",
-    },
-    {
-      name: "Git",
-      icon: git,
     },
   ];
 
