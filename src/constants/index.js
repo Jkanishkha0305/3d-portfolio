@@ -52,6 +52,9 @@ import bits from "../assets/bits.jpg"
 
   const achievements = [
     {
+      title: "🏆 Winner at CalHacks 13.0, Box Grand Challenge.",
+    },
+    {
       title: "🏁 Finalist (Top 6) at Empire Hacks 2026, Cornell University.",
       link: "https://www.linkedin.com/posts/jkanishkha_empirehacks2026-cornelltech-aiagents-ugcPost-7442221055294898176-3p8g?utm_source=share&utm_medium=member_desktop&rcm=ACoAADXHBlUBj6-XUaYiIKHi1XNr9PdWjaOg5e0",
     },
@@ -657,7 +660,7 @@ import bits from "../assets/bits.jpg"
   
   const experiences = [
     {
-      title: "AI Engineer Intern",
+      title: "AI Engineer",
       company_name: "Toyota Motors North America",
       icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Toyota_logo_%28Red%29.svg/960px-Toyota_logo_%28Red%29.svg.png",
       iconBg: "#ffffff",
