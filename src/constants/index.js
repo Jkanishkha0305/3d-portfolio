@@ -205,7 +205,7 @@ import bits from "../assets/bits.jpg"
     },
     {
       name:"AWS",
-      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original.svg",
     },
     {
       name: "Docker",
